@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @font-face {
+        font-family: "Circular";
+        src: url(./assets/fonts/CircularStd-Bold.woff);
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              c_pink: "#F85E9F",
+              c_indigo: "#5D50C6",
+              c_black: "#191825",
+              c_orange: "#FF5722",
+              c_yellow: "#FACD49",
+            },
+            fontFamily: {
+              circular: ["Circular", "sans-serif"],
+              poppins: ["'Poppins'", "sans-serif"],
+            },
+            boxShadow: {
+              c_1: [
+                "0px 0px 0px 0px rgba(0, 0, 0, 0.07)",
+                "0px 34px 75px 0px rgba(0, 0, 0, 0.07)",
+                "0px 137px 137px 0px rgba(0, 0, 0, 0.06)",
+                "0px 308px 185px 0px rgba(0, 0, 0, 0.04)",
+                "0px 548px 219px 0px rgba(0, 0, 0, 0.01)",
+                "0px 856px 240px 0px rgba(0, 0, 0, 0.00)",
+              ],
+              c_2: [
+                "0px 0px 0px 0px rgba(0, 0, 0, 0.10)",
+                "0px 5px 11px 0px rgba(0, 0, 0, 0.10)",
+                "0px 20px 20px 0px rgba(0, 0, 0, 0.09)",
+                "0px 45px 27px 0px rgba(0, 0, 0, 0.05)",
+                "0px 81px 32px 0px rgba(0, 0, 0, 0.01)",
+                "0px 126px 35px 0px rgba(0, 0, 0, 0.00)",
+              ],
+            },
+          },
+        },
+      };
+    </script>
+    <title>TravLog</title>
+  </head>
+  <body>
+    <nav
+      class="container flex flex-row justify-between mx-auto px-4 md:px-16 lg:px-24 py-9 text-sm"
+    >
+      <img src="assets/images/logo.svg" class="order-1 md:order-2 lg:order-1" />
+      <ul
+        class="hidden order-2 lg:flex flex-row gap-x-16 justify-center items-center text-sm opacity-50 font-circular"
+      >
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Discover</a></li>
+        <li><a href="#">Special Deals</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <button class="p-1 order-2 md:order-1 lg:hidden">
+        <img src="assets/images/menu.svg" />
+      </button>
+      <div class="hidden order-3 md:flex flex-row">
+        <button class="font-circular text-c_black px-8 py-4 rounded-full">
+          Log In
+        </button>
+        <button
+          class="font-circular bg-c_indigo text-white px-8 py-4 rounded-full"
+        >
+          Sign Up
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      class="container flex flex-col lg:grid grid-cols-12 mx-auto px-4 md:px-16 lg:px-24 gap-y-8 md:gap-y-16 py-8 md:py-16 lg:py-9 justify-center items-center"
+    >
+      <img
+        src="assets/images/illustration-hero.png"
+        class="lg:order-2 lg:col-span-7"
+      />
+      <div
+        class="flex flex-col text-center lg:text-start md:gap-y-[43px] lg:order-1 lg:col-span-5"
+      >
+        <button
+          class="flex flex-row gap-x-4 mx-auto lg:ml-0 font-circular text-c_pink px-8 py-4 rounded-full bg-white shadow-c_1"
+        >
+          <p>Explore the world!</p>
+          <img src="assets/images/bag.svg" />
+        </button>
+        <h1
+          class="text-[40px] md:text-[56px] font-circular mt-2 md:mt-0 leading-tight md:w-11/12 md:mx-auto lg:w-full lg:ml-0"
+        >
+          Travel <span class="text-c_pink">top destination</span> of the world
+        </h1>
+        <p
+          class="text-c_black opacity-50 font-inter mt-4 md:mt-0 md:w-7/12 md:mx-auto lg:w-full ml-0"
+        >
+          We always make our customer happy by providing as many choices as
+          possible
+        </p>
+        <div
+          class="flex flex-col md:flex-row justify-center lg:justify-start gap-x-4 gap-y-6 font-circular text-sm mt-5 md:mt-0"
+        >
+          <button
+            class="rounded-full px-8 py-6 md:py-4 bg-c_indigo text-white shadow-c_2"
+          >
+            Get Started
+          </button>
+          <button
+            class="flex flex-row justify-center gap-x-2 rounded-full px-8 py-6 md:py-4 bg-white text-white border border-[#EEEEEE]"
+          >
+            <img src="assets/images/play.svg" />
+            <p class="text-c_black">Watch Demo</p>
+          </button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
