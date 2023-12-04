@@ -20,6 +20,11 @@
       tailwind.config = {
         theme: {
           extend: {
+            maxWidth: {
+              c_sm: "400px",
+              c_md: "640px",
+              c_lg: "1180px",
+            },
             colors: {
               c_pink: "#F85E9F",
               c_indigo: "#5D50C6",
@@ -48,6 +53,10 @@
                 "0px 81px 32px 0px rgba(0, 0, 0, 0.01)",
                 "0px 126px 35px 0px rgba(0, 0, 0, 0.00)",
               ],
+              c_3: [
+                "0px 0px 0px 0px rgba(0, 0, 0, 0.10)",
+                "0px 41px 89px 0px rgba(0, 0, 0, 0.10)",
+              ],
             },
           },
         },
@@ -57,7 +66,7 @@
   </head>
   <body>
     <nav
-      class="container flex flex-row justify-between mx-auto px-4 md:px-16 lg:px-24 py-9 text-sm"
+      class="max-w-c_sm md:max-w-c_md lg:max-w-c_lg flex flex-row justify-between mx-auto py-9 text-sm"
     >
       <img src="assets/images/logo.svg" class="order-1 md:order-2 lg:order-1" />
       <ul
@@ -85,7 +94,7 @@
 
     <!-- Hero Section -->
     <section
-      class="container flex flex-col lg:grid grid-cols-12 mx-auto px-4 md:px-16 lg:px-24 gap-y-8 md:gap-y-16 py-8 md:py-16 lg:py-9 justify-center items-center"
+      class="flex flex-col lg:grid grid-cols-12 mx-auto max-w-c_sm md:max-w-c_md lg:max-w-c_lg gap-y-8 md:gap-y-16 py-8 md:py-16 lg:py-9 justify-center items-center"
     >
       <img
         src="assets/images/illustration-hero.png"
@@ -128,5 +137,77 @@
         </div>
       </div>
     </section>
+
+    <!-- Partners Section -->
+    <div
+      class="flex flex-row flex-wrap justify-center lg:justify-between items-center mx-auto py-8 md:py-16 max-w-c_sm md:max-w-c_md lg:max-w-c_lg gap-x-[26px] lg:gap-0 gap-y-8"
+    >
+      <img src="assets/images/logo-tripadvisor.svg" class="h-5 md:h-8" />
+      <img src="assets/images/logo-expedia.svg" class="h-5 md:h-8" />
+      <img src="assets/images/logo-booking.svg" class="h-5 md:h-8" />
+      <img src="assets/images/logo-airbnb.svg" class="h-5 md:h-8" />
+      <img src="assets/images/logo-orbitz.svg" class="h-5 md:h-8" />
+    </div>
+
+    <!-- Services Section -->
+    <div
+      class="flex flex-col lg:grid grid-cols-12 mx-auto max-w-c_sm md:max-w-c_md lg:max-w-c_lg py-8 md:py-16 gap-y-[42px] md:gap-y-16"
+    >
+      <div
+        class="lg:flex flex-col justify-center font-circular text-center lg:text-start lg:col-span-4"
+      >
+        <h3 class="uppercase mb-4 text-c_pink text-base md:text-2xl">
+          Services
+        </h3>
+        <h2
+          class="text-c_black text-[32px] md:text-[40px] lg:text-[44px] leading-tight"
+        >
+          Our top value categories for you
+        </h2>
+      </div>
+      <div
+        class="flex flex-col md:flex-row gap-y-4 md:gap-y-0 md:gap-x-4 lg:col-span-8"
+      >
+        <div
+          class="flex flex-col text-center gap-y-8 md:gap-y-16 py-8 md:py-16 px-8 md:px-4 border rounded-[32px]"
+        >
+          <img src="assets/images/destination.svg" class="h-16" />
+          <div>
+            <h4 class="text-c_black font-circular text-2xl md:text-[28px] mb-8">
+              Best Tour Guide
+            </h4>
+            <p class="text-black opacity-50 font-poppins text-lg">
+              What looked like a small patch of purple grass, above five feet.
+            </p>
+          </div>
+        </div>
+        <div
+          class="flex flex-col text-center gap-y-8 md:gap-y-16 py-8 md:py-16 px-8 md:px-4 border rounded-[32px]"
+        >
+          <img src="assets/images/booking.svg" class="h-16" />
+          <div>
+            <h4 class="text-c_black font-circular text-2xl md:text-[28px] mb-8">
+              Easy Booking
+            </h4>
+            <p class="text-black opacity-50 font-poppins text-lg">
+              Square, was moving across the sand in their direction.
+            </p>
+          </div>
+        </div>
+        <div
+          class="flex flex-col text-center gap-y-8 md:gap-y-16 py-8 md:py-16 px-8 md:px-4 border rounded-[32px]"
+        >
+          <img src="assets/images/cloud.svg" class="h-16" />
+          <div>
+            <h4 class="text-c_black font-circular text-2xl md:text-[28px] mb-8">
+              Weather Forecast
+            </h4>
+            <p class="text-black opacity-50 font-poppins text-lg">
+              What looked like a small patch of purple grass, above five feet.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
