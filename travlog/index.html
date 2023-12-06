@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
       rel="stylesheet"
     />
     <script>
@@ -34,7 +34,7 @@
             },
             fontFamily: {
               circular: ["Circular", "sans-serif"],
-              poppins: ["'Poppins'", "sans-serif"],
+              inter: ["'Inter'", "sans-serif"],
             },
             boxShadow: {
               c_1: [
@@ -56,6 +56,14 @@
               c_3: [
                 "0px 0px 0px 0px rgba(0, 0, 0, 0.10)",
                 "0px 41px 89px 0px rgba(0, 0, 0, 0.10)",
+              ],
+              c_4: [
+                "0px 0px 0px 0px rgba(0, 0, 0, 0.05)",
+                "0px 32px 71px 0px rgba(0, 0, 0, 0.05)",
+                "0px 128px 128px 0px rgba(0, 0, 0, 0.04)",
+                "0px 288px 173px 0px rgba(0, 0, 0, 0.03)",
+                "0px 513px 205px 0px rgba(0, 0, 0, 0.01)",
+                "0px 801px 224px 0px rgba(0, 0, 0, 0.00)",
               ],
             },
           },
@@ -139,7 +147,7 @@
     </section>
 
     <!-- Partners Section -->
-    <div
+    <section
       class="flex flex-row flex-wrap justify-center lg:justify-between items-center mx-auto py-8 md:py-16 max-w-c_sm md:max-w-c_md lg:max-w-c_lg gap-x-[26px] lg:gap-0 gap-y-8"
     >
       <img src="assets/images/logo-tripadvisor.svg" class="h-5 md:h-8" />
@@ -147,14 +155,14 @@
       <img src="assets/images/logo-booking.svg" class="h-5 md:h-8" />
       <img src="assets/images/logo-airbnb.svg" class="h-5 md:h-8" />
       <img src="assets/images/logo-orbitz.svg" class="h-5 md:h-8" />
-    </div>
+    </section>
 
     <!-- Services Section -->
-    <div
+    <section
       class="flex flex-col lg:grid grid-cols-12 mx-auto max-w-c_sm md:max-w-c_md lg:max-w-c_lg py-8 md:py-16 gap-y-[42px] md:gap-y-16"
     >
       <div
-        class="lg:flex flex-col justify-center font-circular text-center lg:text-start lg:col-span-4"
+        class="lg:flex lg:flex-col justify-center font-circular text-center lg:text-start lg:col-span-4"
       >
         <h3 class="uppercase mb-4 text-c_pink text-base md:text-2xl">
           Services
@@ -176,7 +184,7 @@
             <h4 class="text-c_black font-circular text-2xl md:text-[28px] mb-8">
               Best Tour Guide
             </h4>
-            <p class="text-black opacity-50 font-poppins text-lg">
+            <p class="text-black opacity-50 font-inter text-lg">
               What looked like a small patch of purple grass, above five feet.
             </p>
           </div>
@@ -189,7 +197,7 @@
             <h4 class="text-c_black font-circular text-2xl md:text-[28px] mb-8">
               Easy Booking
             </h4>
-            <p class="text-black opacity-50 font-poppins text-lg">
+            <p class="text-black opacity-50 font-inter text-lg">
               Square, was moving across the sand in their direction.
             </p>
           </div>
@@ -202,12 +210,217 @@
             <h4 class="text-c_black font-circular text-2xl md:text-[28px] mb-8">
               Weather Forecast
             </h4>
-            <p class="text-black opacity-50 font-poppins text-lg">
+            <p class="text-black opacity-50 font-inter text-lg">
               What looked like a small patch of purple grass, above five feet.
             </p>
           </div>
         </div>
       </div>
-    </div>
+    </section>
+
+    <!-- Destination Section -->
+    <section
+      class="flex flex-col mx-auto max-w-c_sm md:max-w-c_md lg:max-w-c_lg py-8 md:py-16 gap-y-8 md:gap-y-16"
+    >
+      <div
+        class="flex flex-col lg:flex-row lg:justify-between gap-y-8 md:gap-y-16"
+      >
+        <div
+          class="lg:flex lg:flex-col justify-center font-circular text-center lg:text-start lg:col-span-4"
+        >
+          <h3 class="uppercase mb-4 text-c_pink text-base md:text-2xl">
+            Top Destination
+          </h3>
+          <h2
+            class="text-c_black text-[32px] md:text-[40px] lg:text-[44px] leading-tight"
+          >
+            Explore top destination
+          </h2>
+        </div>
+        <div class="flex flex-row justify-between md:justify-center md:gap-x-8">
+          <button
+            class="flex flex-row justify-center items-center rounded-full border bg-white active:bg-c_indigo w-16 md:w-[100px] h-16 md:h-[100px] group"
+          >
+            <img
+              src="assets/images/arrow-left1.svg"
+              class="group-active:hidden"
+            />
+            <img
+              src="assets/images/arrow-left2.svg"
+              class="hidden group-active:block"
+            />
+          </button>
+          <button
+            class="flex flex-row justify-center items-center rounded-full border bg-white active:bg-c_indigo w-16 md:w-[100px] h-16 md:h-[100px] group"
+          >
+            <img
+              src="assets/images/arrow-right1.svg"
+              class="group-active:hidden"
+            />
+            <img
+              src="assets/images/arrow-right2.svg"
+              class="hidden group-active:block"
+            />
+          </button>
+        </div>
+      </div>
+      <div
+        class="grid md:grid-cols-12 md:flex-row gap-y-8 gap-x-8 md:gap-x-4 lg:gap-x-8"
+      >
+        <div class="md:col-span-4 rounded-[32px] overflow-hidden shadow-c_4">
+          <div
+            class="h-80 lg:w-96 bg-cover"
+            style="background-image: url(assets/images/beach.jpg)"
+          ></div>
+          <div class="py-8 px-8 md:px-5 font-circular">
+            <div class="lg:flex lg:gap-x-8 lg:mb-4">
+              <h4
+                class="text-c_pink text-2xl md:text-lg lg:text-2xl mb-2 lg:mb-0 lg:order-2"
+              >
+                &dollar;550.16
+              </h4>
+              <h5
+                class="text-c_black text-2xl md:text-lg lg:text-2xl mb-4 lg:mb-0 lg:order-1"
+              >
+                Paradise Beach, Bantayan Island
+              </h5>
+            </div>
+            <p
+              class="text-c_black opacity-50 font-inter mb-8 text-lg md:text-base lg:text-lg"
+            >
+              Rome, Italy
+            </p>
+            <div class="flex flex-row gap-x-2 items-center">
+              <p
+                class="text-2xl md:text-lg lg:text-2xl leading-tight md:leading-none text-c_orange"
+              >
+                4.8
+              </p>
+              <img src="assets/images/star.svg" />
+            </div>
+          </div>
+        </div>
+        <div class="md:col-span-4 rounded-[32px] overflow-hidden shadow-c_4">
+          <div
+            class="h-80 lg:w-96 bg-cover"
+            style="background-image: url(assets/images/fish.jpg)"
+          ></div>
+          <div class="py-8 px-8 md:px-5 font-circular">
+            <div class="lg:flex lg:gap-x-8 lg:mb-4">
+              <h4
+                class="text-c_pink text-2xl md:text-lg lg:text-2xl mb-2 lg:mb-0 lg:order-2"
+              >
+                &dollar;20.99
+              </h4>
+              <h5
+                class="text-c_black text-2xl md:text-lg lg:text-2xl mb-4 lg:mb-0 lg:order-1"
+              >
+                Ocean with full of Colors
+              </h5>
+            </div>
+            <p
+              class="text-c_black opacity-50 font-inter mb-8 text-lg md:text-base lg:text-lg"
+            >
+              Maldives
+            </p>
+            <div class="flex flex-row gap-x-2 items-center">
+              <p
+                class="text-2xl md:text-lg lg:text-2xl leading-tight md:leading-none text-c_orange"
+              >
+                4.5
+              </p>
+              <img src="assets/images/star.svg" />
+            </div>
+          </div>
+        </div>
+        <div class="md:col-span-4 rounded-[32px] overflow-hidden shadow-c_4">
+          <div
+            class="h-80 lg:w-96 bg-cover"
+            style="background-image: url(assets/images/mountain.jpg)"
+          ></div>
+          <div class="py-8 px-8 md:px-5 font-circular">
+            <div class="lg:flex lg:gap-x-8 lg:mb-4">
+              <h4
+                class="text-c_pink text-2xl md:text-lg lg:text-2xl mb-2 lg:mb-0 lg:order-2"
+              >
+                &dollar;150.99
+              </h4>
+              <h5
+                class="text-c_black text-2xl md:text-lg lg:text-2xl mb-4 lg:mb-0 lg:order-1"
+              >
+                Mountain View, Above the cloud
+              </h5>
+            </div>
+            <p
+              class="text-c_black opacity-50 font-inter mb-8 text-lg md:text-base lg:text-lg"
+            >
+              United Arab Emeries
+            </p>
+            <div class="flex flex-row gap-x-2 items-center">
+              <p
+                class="text-2xl md:text-lg lg:text-2xl leading-tight md:leading-none text-c_orange"
+              >
+                5.0
+              </p>
+              <img src="assets/images/star.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Travel Point Section -->
+    <section
+      class="flex flex-col lg:grid lg:grid-cols-12 items-center max-w-c_sm md:max-w-c_md lg:max-w-c_lg mx-auto py-8 md:py-16 gap-y-16"
+    >
+      <img
+        src="assets/images/illustration-travel.png"
+        class="w-full col-span-7 lg:my-12"
+      />
+      <div class="flex flex-col gap-y-8 lg:gap-y-16 col-span-5">
+        <div
+          class="lg:flex lg:flex-col justify-center font-circular text-center lg:text-start lg:col-span-4"
+        >
+          <h3 class="uppercase mb-4 text-c_pink text-base md:text-2xl">
+            Travel Point
+          </h3>
+          <h2
+            class="text-c_black text-[32px] md:text-[40px] lg:text-[44px] leading-tight mb-8"
+          >
+            We helping you find your dream location
+          </h2>
+          <p class="text-c_black opacity-50 font-inter">
+            Contrary to popular belief, Lorem Ipsum is not simply random text.
+            It has roots in a piece of classical Latin literature from 45 BC.
+          </p>
+        </div>
+        <div class="grid md:grid-cols-12 gap-y-4 md:gap-8">
+          <div
+            class="flex flex-col md:col-span-6 gap-y-4 py-8 px-8 text-center rounded-[32px] border"
+          >
+            <h4 class="text-c_orange font-circular text-4xl">500+</h4>
+            <h5 class="text-c_black font-inter text-lg">Holiday Package</h5>
+          </div>
+          <div
+            class="flex flex-col md:col-span-6 gap-y-4 py-8 px-8 text-center rounded-[32px] border"
+          >
+            <h4 class="text-c_orange font-circular text-4xl">100</h4>
+            <h5 class="text-c_black font-inter text-lg">Luxury Hotel</h5>
+          </div>
+          <div
+            class="flex flex-col md:col-span-6 gap-y-4 py-8 px-8 text-center rounded-[32px] border"
+          >
+            <h4 class="text-c_orange font-circular text-4xl">7</h4>
+            <h5 class="text-c_black font-inter text-lg">Premium Airlines</h5>
+          </div>
+          <div
+            class="flex flex-col md:col-span-6 gap-y-4 py-8 px-8 text-center rounded-[32px] border"
+          >
+            <h4 class="text-c_orange font-circular text-4xl">2k+</h4>
+            <h5 class="text-c_black font-inter text-lg">Happy Customer</h5>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
