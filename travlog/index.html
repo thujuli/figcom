@@ -239,7 +239,7 @@
         </div>
         <div class="flex flex-row justify-between md:justify-center md:gap-x-8">
           <button
-            class="flex flex-row justify-center items-center rounded-full border bg-white active:bg-c_indigo w-16 md:w-[100px] h-16 md:h-[100px] group"
+            class="flex flex-row justify-center items-center rounded-full border bg-white active:bg-c_indigo w-16 h-16 group"
           >
             <img
               src="assets/images/arrow-left1.svg"
@@ -251,7 +251,7 @@
             />
           </button>
           <button
-            class="flex flex-row justify-center items-center rounded-full border bg-white active:bg-c_indigo w-16 md:w-[100px] h-16 md:h-[100px] group"
+            class="flex flex-row justify-center items-center rounded-full border bg-white active:bg-c_indigo w-16 h-16 group"
           >
             <img
               src="assets/images/arrow-right1.svg"
@@ -371,7 +371,7 @@
 
     <!-- Travel Point Section -->
     <section
-      class="flex flex-col lg:grid lg:grid-cols-12 items-center max-w-c_sm md:max-w-c_md lg:max-w-c_lg mx-auto py-8 md:py-16 gap-y-16"
+      class="flex flex-col lg:grid lg:grid-cols-12 lg:gap-x-6 items-center max-w-c_sm md:max-w-c_md lg:max-w-c_lg mx-auto py-8 md:py-16 gap-y-16"
     >
       <img
         src="assets/images/illustration-travel.png"
@@ -389,7 +389,7 @@
           >
             We helping you find your dream location
           </h2>
-          <p class="text-c_black opacity-50 font-inter">
+          <p class="text-c_black opacity-50 font-inter md:text-lg">
             Contrary to popular belief, Lorem Ipsum is not simply random text.
             It has roots in a piece of classical Latin literature from 45 BC.
           </p>
@@ -422,5 +422,294 @@
         </div>
       </div>
     </section>
+
+    <!-- Features Section -->
+    <section
+      class="flex flex-col lg:grid lg:grid-cols-12 lg:gap-x-6 items-center max-w-c_sm md:max-w-c_md lg:max-w-c_lg mx-auto px-8 py-8 md:py-16"
+    >
+      <img
+        src="assets/images/illustration-feature.png"
+        class="h-[440px] md:h-[870px] mb-16 md:mb-[70px] lg:mb-0 lg:col-span-7 lg:order-2"
+      />
+      <div class="flex flex-col lg:col-span-5 lg:order-1">
+        <div
+          class="lg:flex lg:flex-col justify-center font-circular text-center lg:text-start lg:col-span-4 mb-8 md:mb-16"
+        >
+          <h3 class="uppercase mb-4 text-c_pink text-base md:text-2xl">
+            Key features
+          </h3>
+          <h2
+            class="text-c_black text-[32px] md:text-[40px] lg:text-[44px] leading-tight mb-8"
+          >
+            We offer best services
+          </h2>
+          <p class="text-c_black opacity-50 font-inter md:text-lg">
+            Contrary to popular belief, Lorem Ipsum is not simply random text.
+            It has roots in a piece of classical Latin literature from 45 BC.
+          </p>
+        </div>
+        <div class="grid gap-y-2 md:gap-y-0">
+          <div
+            class="flex flex-col md:flex-row gap-y-8 md:gap-y-0 md:gap-x-8 py-8 px-8 text-center"
+          >
+            <div
+              class="flex flex-col justify-center items-center bg-c_orange h-[100px] w-[100px] rounded-[32px]"
+            >
+              <img src="assets/images/location.svg" />
+            </div>
+            <div class="flex flex-col gap-y-2 md:justify-center text-start">
+              <h5 class="text-c_black font-circular text-2xl">
+                We offer best services
+              </h5>
+              <p class="text-c_black opacity-50 font-inter text-lg">
+                Lorem Ipsum is not simply random text
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col md:flex-row gap-y-8 md:gap-y-0 md:gap-x-8 py-8 px-8 text-center rounded-[32px] border"
+          >
+            <div
+              class="flex flex-col justify-center items-center bg-c_yellow h-[100px] w-[100px] rounded-[32px]"
+            >
+              <img src="assets/images/calendar.svg" />
+            </div>
+            <div class="flex flex-col gap-y-2 md:justify-center text-start">
+              <h5 class="text-c_black font-circular text-2xl">
+                Schedule your trip
+              </h5>
+              <p class="text-c_black opacity-50 font-inter text-lg">
+                It has roots in a piece of classical
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col md:flex-row gap-y-8 md:gap-y-0 md:gap-x-8 py-8 px-8 text-center"
+          >
+            <div
+              class="flex flex-col justify-center items-center bg-c_pink h-[100px] w-[100px] rounded-[32px]"
+            >
+              <img src="assets/images/ticket.svg" />
+            </div>
+            <div class="flex flex-col gap-y-2 md:justify-center text-start">
+              <h5 class="text-c_black font-circular text-2xl">
+                Get discounted coupons
+              </h5>
+              <p class="text-c_black opacity-50 font-inter text-lg">
+                Lorem Ipsum is not simply random text
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section
+      class="flex flex-col md:grid md:grid-cols-8 md:items-center md:gap-x-4 max-w-c_sm md:max-w-c_md lg:max-w-c_lg mx-auto pt-8 md:py-16"
+    >
+      <button
+        class="flex-row justify-center items-center rounded-full border bg-white active:bg-c_indigo w-16 h-16 group col-span-1 hidden md:flex"
+      >
+        <img src="assets/images/arrow-left1.svg" class="group-active:hidden" />
+        <img
+          src="assets/images/arrow-left2.svg"
+          class="hidden group-active:block"
+        />
+      </button>
+      <div class="col-span-6">
+        <div class="flex flex-col items-center gap-y-16 md:gap-y-14">
+          <div class="text-center">
+            <h3
+              class="font-circular uppercase mb-4 text-c_pink text-base md:text-2xl"
+            >
+              Testimonials
+            </h3>
+            <h2
+              class="font-circular text-c_black text-[32px] md:text-[40px] lg:text-[44px] leading-tight"
+            >
+              Trust our clients
+            </h2>
+          </div>
+          <img
+            src="assets/images/testimonial.jpg"
+            class="rounded-full h-32 w-32"
+          />
+          <div class="flex flex-col gap-y-8">
+            <h2 class="text-c_orange font-circular text-[28px] text-center">
+              Mark Smith
+              <span class="text-c_black opacity-50 text-2xl"
+                >/ Travel Enthusiast</span
+              >
+            </h2>
+            <div class="flex flex-row gap-x-4 justify-center">
+              <img src="assets/images/star-yellow.svg" />
+              <img src="assets/images/star-yellow.svg" />
+              <img src="assets/images/star-yellow.svg" />
+              <img src="assets/images/star-yellow.svg" />
+              <img src="assets/images/star-yellow.svg" />
+            </div>
+            <p
+              class="text-center font-inter text-lg lg:text-2xl text-c_black opacity-50"
+            >
+              Contrary to popular belief, Lorem Ipsum is not simply random text.
+              It has roots in a piece of classical Latin literature from 45 BC.
+            </p>
+            <div class="flex flex-row gap-x-6 justify-center">
+              <button
+                class="bg-c_black opacity-10 rounded-full w-6 h-6"
+              ></button>
+              <button class="bg-c_pink rounded-full w-6 h-6"></button>
+              <button
+                class="bg-c_black opacity-10 rounded-full w-6 h-6"
+              ></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        class="flex-row justify-center items-center rounded-full border bg-white active:bg-c_indigo w-16 h-16 group col-span-1 hidden md:flex"
+      >
+        <img src="assets/images/arrow-right1.svg" class="group-active:hidden" />
+        <img
+          src="assets/images/arrow-right2.svg"
+          class="hidden group-active:block"
+        />
+      </button>
+      <div
+        class="flex flex-row justify-between md:justify-center md:gap-x-8 mt-16 mb-8 md:hidden"
+      >
+        <button
+          class="flex flex-row justify-center items-center rounded-full border bg-white active:bg-c_indigo w-16 h-16 group"
+        >
+          <img
+            src="assets/images/arrow-left1.svg"
+            class="group-active:hidden"
+          />
+          <img
+            src="assets/images/arrow-left2.svg"
+            class="hidden group-active:block"
+          />
+        </button>
+        <button
+          class="flex flex-row justify-center items-center rounded-full border bg-white active:bg-c_indigo w-16 h-16 group"
+        >
+          <img
+            src="assets/images/arrow-right1.svg"
+            class="group-active:hidden"
+          />
+          <img
+            src="assets/images/arrow-right2.svg"
+            class="hidden group-active:block"
+          />
+        </button>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section
+      class="flex flex-col max-w-c_sm md:max-w-c_md lg:max-w-c_lg mx-auto bg-c_yellow/10 py-16 md:py-32 px-8 lg:px-16 gap-y-16 md:mt-[177px]"
+    >
+      <div class="text-center">
+        <h3
+          class="font-circular uppercase mb-4 text-c_pink text-base md:text-2xl"
+        >
+          subscribe to our newsletter
+        </h3>
+        <h2
+          class="font-circular text-c_black text-[32px] md:text-[40px] lg:text-[55px] leading-tight"
+        >
+          Prepare yourself &amp; let&apos;s explore the beauty of the world
+        </h2>
+      </div>
+      <div
+        class="flex flex-col md:flex-row gap-y-8 md:gap-y-0 md:gap-x-6 lg:gap-x-16 justify-between"
+      >
+        <div class="relative md:flex-1">
+          <input
+            type="text"
+            class="pl-20 pr-8 rounded-2xl font-circular text-sm md:text-lg lg:text-2xl w-full py-6"
+            placeholder="Your Email"
+          />
+          <div
+            class="absolute inset-y-0 left-0 pl-8 flex items-center pointer-events-none"
+          >
+            <img src="assets/images/message.svg" />
+          </div>
+        </div>
+        <button
+          class="bg-c_indigo rounded-2xl py-6 px-16 font-circular md:text-lg lg:text-2xl text-white md:flex-none"
+        >
+          Subscribe
+        </button>
+      </div>
+    </section>
+
+    <footer
+      class="flex flex-col lg:grid lg:grid-cols-2 lg max-w-c_sm md:max-w-c_md lg:max-w-c_lg mx-auto py-8 md:py-16 gap-y-16 lg:gap-x-8 lg:mt-16"
+    >
+      <div class="flex flex-col gap-y-8 lg:gap-y-0 lg:col-span-1">
+        <img src="assets/images/logo.svg" class="w-36 lg:mb-8" />
+        <p class="font-inter text-c_black opacity-50 md:text-lg lg:mb-16">
+          Contrary to popular belief, Lorem Ipsum is not simply random text. It
+          has roots in a piece of classical Latin literature from 45 BC.
+        </p>
+        <div class="flex flex-row gap-x-8">
+          <img src="assets/images/icon-facebook.svg" />
+          <img src="assets/images/icon-facebook.svg" />
+          <img src="assets/images/icon-facebook.svg" />
+        </div>
+      </div>
+      <div class="grid gap-y-16 mg:gap-y-0 md:grid-cols-3 lg:col-span-1">
+        <div
+          class="flex flex-row md:flex-col justify-between md:items-start md:col-span-1 md:gap-y-8"
+        >
+          <h4 class="text-c_black font-circular text-2xl">Company</h4>
+          <img src="assets/images/arrow-circle-down.svg" class="md:hidden" />
+          <p class="text-c_black opacity-50 hidden md:block text-lg font-inter">
+            About
+          </p>
+          <p class="text-c_black opacity-50 hidden md:block text-lg font-inter">
+            Career
+          </p>
+          <p class="text-c_black opacity-50 hidden md:block text-lg font-inter">
+            Mobile
+          </p>
+        </div>
+        <div
+          class="flex flex-row md:flex-col justify-between md:items-start md:col-span-1 md:gap-y-8"
+        >
+          <h4 class="text-c_black font-circular text-2xl">Contact Us</h4>
+          <img src="assets/images/arrow-circle-down.svg" class="md:hidden" />
+          <p class="text-c_black opacity-50 hidden md:block text-lg font-inter">
+            Why Travlog?
+          </p>
+          <p class="text-c_black opacity-50 hidden md:block text-lg font-inter">
+            Partner with us
+          </p>
+          <p class="text-c_black opacity-50 hidden md:block text-lg font-inter">
+            FAQ&apos;s
+          </p>
+          <p class="text-c_black opacity-50 hidden md:block text-lg font-inter">
+            Blog
+          </p>
+        </div>
+        <div
+          class="flex flex-row md:flex-col justify-between md:items-start md:col-span-1 md:gap-y-8"
+        >
+          <h4 class="text-c_black font-circular text-2xl">Meet Us</h4>
+          <img src="assets/images/arrow-circle-down.svg" class="md:hidden" />
+          <p class="text-c_black opacity-50 hidden md:block text-lg font-inter">
+            +00 92 1234 56789
+          </p>
+          <p class="text-c_black opacity-50 hidden md:block text-lg font-inter">
+            info@travlog.com
+          </p>
+          <p class="text-c_black opacity-50 hidden md:block text-lg font-inter">
+            205. R Street, New York BD23200
+          </p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
