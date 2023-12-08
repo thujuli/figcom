@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SquareUp</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              barlow: ["'Barlow'", "sans-serif"],
+            },
+            colors: {
+              grey1: "#1A1A1A",
+              grey2: "#262626",
+              grey3: "#E6E6E6",
+              grey4: "#98989A",
+              grey5: "#242424",
+              green1: "#9EFF00",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-grey1 text-white font-barlow">
+    <nav
+      class="flex flex-row justify-between pt-10 lg:pt-5 pb-5 px-4 xl:px-20 border-b border-grey5"
+    >
+      <img src="assets/img/logo.svg" class="w-[118px]" />
+      <div class="p-[6px] lg:hidden">
+        <img src="assets/img/menu.svg" class="w-[34px]" />
+      </div>
+      <ul
+        class="flex-row font-medium text-sm items-center hidden lg:flex text-grey3"
+      >
+        <li>
+          <a
+            href="#"
+            class="px-[22px] py-3 focus:bg-grey2 focus:font-semibold focus:rounded-md focus:text-white"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="px-[22px] py-3 focus:bg-grey2 focus:font-semibold focus:rounded-md focus:text-white"
+            >Services</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="px-[22px] py-3 focus:bg-grey2 focus:font-semibold focus:rounded-md focus:text-white"
+            >Work</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="px-[22px] py-3 focus:bg-grey2 focus:font-semibold focus:rounded-md focus:text-white"
+            >Process</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="px-[22px] py-3 focus:bg-grey2 focus:font-semibold focus:rounded-md focus:text-white"
+            >About</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="px-[22px] py-3 focus:bg-grey2 focus:font-semibold focus:rounded-md focus:text-white"
+            >Careers</a
+          >
+        </li>
+      </ul>
+      <button
+        class="bg-green1 py-3 px-[18px] text-sm font-medium rounded-md text-grey2 hidden lg:block"
+      >
+        Contact Us
+      </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      class="container mx-auto pt-20 lg:pt-[112px] pb-52 lg:pb-80 px-4 text-center bg-cover bg-bottom border-x border-grey5"
+      style="background-image: url(assets/img/bg-hero.png)"
+    >
+      <h1
+        class="font-semibold text-[34px] lg:text-[48px] mb-[30px] lg:w-7/12 lg:mx-auto"
+      >
+        A Digital Product Studio that will Work
+      </h1>
+      <div
+        class="px-5 py-[18px] bg-grey2 rounded-lg mb-10 lg:w-fit lg:mx-auto border border-grey5"
+      >
+        <p class="text-grey4 lg:text-lg">
+          For
+          <span
+            class="lg:inline-block lg:px-2 lg:py-[10px] lg:bg-grey4/20 lg:text-white lg:rounded-md lg:capitalize"
+            >startups</span
+          >,
+          <span
+            class="lg:inline-block lg:px-2 lg:py-[10px] lg:bg-grey4/20 lg:text-white lg:rounded-md lg:capitalize"
+            >enterprise leaders</span
+          >,
+          <span
+            class="lg:inline-block lg:px-2 lg:py-[10px] lg:bg-grey4/20 lg:text-white lg:rounded-md lg:capitalize"
+            >media & publishers</span
+          ><span class="lg:hidden">,</span> and
+          <span
+            class="lg:inline-block lg:px-2 lg:py-[10px] lg:bg-grey4/20 lg:text-white lg:rounded-md lg:capitalize"
+            >social good</span
+          ><span class="lg:hidden">.</span>
+        </p>
+      </div>
+      <div class="flex flex-row justify-center gap-x-[13px]">
+        <button
+          class="bg-grey2 py-[14px] px-5 text-sm font-medium rounded-md border border-grey5"
+        >
+          Our Works
+        </button>
+        <button
+          class="bg-green1 py-[14px] px-5 text-sm font-medium rounded-md text-grey2"
+        >
+          Contact Us
+        </button>
+      </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="relative">
+      <div
+        class="mx-auto text-center px-6 py-[14px] rounded-full w-fit border border-grey5 absolute -top-7 left-0 right-0 z-10 bg-grey1"
+      >
+        <p class="font-medium text-sm">Trusted By 250+ Companies</p>
+      </div>
+    </section>
+
+    <div class="container mx-auto px-6 md:px-0">
+      <div
+        class="grid grid-cols-2 lg:grid-cols-6 lg:gap-x-5 lg:border border-grey5"
+      >
+        <div class="col-span-1 p-[30px] border border-grey5 lg:border-0">
+          <img src="assets/img/zapier.svg" class="h-10 mx-auto" />
+        </div>
+        <div class="col-span-1 p-[30px] border border-grey5 lg:border-0">
+          <img src="assets/img/spotify.svg" class="h-10 mx-auto" />
+        </div>
+        <div class="col-span-1 p-[30px] border border-grey5 lg:border-0">
+          <img src="assets/img/zoom.svg" class="h-10 mx-auto" />
+        </div>
+        <div class="col-span-1 p-[30px] border border-grey5 lg:border-0">
+          <img src="assets/img/slack.svg" class="h-10 mx-auto" />
+        </div>
+        <div class="col-span-1 p-[30px] border border-grey5 lg:border-0">
+          <img src="assets/img/amazon.svg" class="h-10 mx-auto" />
+        </div>
+        <div class="col-span-1 p-[30px] border border-grey5 lg:border-0">
+          <img src="assets/img/adobe.svg" class="h-10 mx-auto" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
