@@ -25,6 +25,7 @@
               grey4: "#98989A",
               grey5: "#242424",
               green1: "#9EFF00",
+              green2: "#D8FF99",
             },
           },
         },
@@ -88,7 +89,7 @@
       <button
         class="bg-green1 py-3 px-[18px] text-sm font-medium rounded-md text-grey2 hidden lg:block"
       >
-        Contact Us
+        <a href="#">Contact Us</a>
       </button>
     </nav>
 
@@ -129,26 +130,26 @@
         <button
           class="bg-grey2 py-[14px] px-5 text-sm font-medium rounded-md border border-grey5"
         >
-          Our Works
+          <a href="#">Our Works</a>
         </button>
         <button
           class="bg-green1 py-[14px] px-5 text-sm font-medium rounded-md text-grey2"
         >
-          Contact Us
+          <a href="#">Contact Us</a>
         </button>
       </div>
     </section>
 
     <!-- Partners Section -->
-    <section class="relative">
+    <div class="relative">
       <div
         class="mx-auto text-center px-6 py-[14px] rounded-full w-fit border border-grey5 absolute -top-7 left-0 right-0 z-10 bg-grey1"
       >
         <p class="font-medium text-sm">Trusted By 250+ Companies</p>
       </div>
-    </section>
+    </div>
 
-    <div class="container mx-auto px-6 md:px-0">
+    <section class="container mx-auto px-4 md:px-0">
       <div
         class="grid grid-cols-2 lg:grid-cols-6 lg:gap-x-5 lg:border border-grey5"
       >
@@ -171,6 +172,415 @@
           <img src="assets/img/adobe.svg" class="h-10 mx-auto" />
         </div>
       </div>
-    </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="container mx-auto flex flex-col px-4 md:px-0">
+      <div
+        class="text-center px-4 lg:px-[250px] py-[50px] lg:py-[100px] bg-blend-overlay bg-grey1/90 border-x border-t border-grey5 bg-cover"
+        style="background-image: url(assets/img/bg-services.png)"
+      >
+        <h2
+          class="font-semibold text-[28px] lg:text-[38px] mb-[6px] lg:mx-[10px]"
+        >
+          Our Services
+        </h2>
+        <p class="text-sm leading-6 lg:text-base">
+          Transform your brand with our innovative digital solutions that
+          captivate and engage your audience.
+        </p>
+      </div>
+      <div class="grid lg:grid-cols-3">
+        <div
+          class="flex flex-col lg:justify-between gap-y-6 p-[30px] lg:p-10 lg:gap-y-[14px] border border-grey5 lg:col-span-1"
+        >
+          <div
+            class="flex flex-row gap-x-[14px] lg:gap-x-0 lg:flex-col lg:items-start lg:gap-y-[30px] items-center"
+          >
+            <div
+              class="p-4 lg:p-5 w-[58px] h-[58px] border border-grey5 rounded-md bg-gradient-to-br from-grey5 to-grey1 lg:h-[70px] lg:w-[70px]"
+            >
+              <img src="assets/img/brush.svg" class="w-[26px] lg:w-[30px]" />
+            </div>
+            <h3 class="font-semibold text-xl lg:text-2xl">Design</h3>
+          </div>
+          <p
+            class="text-grey3 leading-normal text-sm lg:text-base lg:mb-[60px]"
+          >
+            At Squareup, our design team is passionate about creating stunning,
+            user-centric designs that captivate your audience and elevate your
+            brand. We believe that great design is not just about aesthetics;
+            it's about creating seamless and intuitive user experiences.
+          </p>
+          <button class="bg-grey2 font-medium px-4 py-[14px] rounded-md">
+            <a href="#">Learn More</a>
+          </button>
+        </div>
+        <div
+          class="flex flex-col lg:justify-between gap-y-6 p-[30px] lg:p-10 lg:gap-y-[14px] border border-grey5 lg:col-span-1"
+        >
+          <div
+            class="flex flex-row gap-x-[14px] lg:gap-x-0 lg:flex-col lg:items-start lg:gap-y-[30px] items-center"
+          >
+            <div
+              class="p-4 lg:p-5 w-[58px] h-[58px] border border-grey5 rounded-md bg-gradient-to-br from-grey5 to-grey1 lg:h-[70px] lg:w-[70px]"
+            >
+              <img src="assets/img/puzzle.svg" class="w-[26px] lg:w-[30px]" />
+            </div>
+            <h3 class="font-semibold text-xl lg:text-2xl">Engineering</h3>
+          </div>
+          <p
+            class="text-grey3 leading-normal text-sm lg:text-base lg:mb-[60px]"
+          >
+            Our engineering team combines technical expertise with a passion for
+            innovation to build robust and scalable digital solutions. We
+            leverage the latest technologies and best practices to deliver
+            high-performance applications tailored to your specific needs.
+          </p>
+          <button class="bg-grey2 font-medium px-4 py-[14px] rounded-md">
+            <a href="#">Learn More</a>
+          </button>
+        </div>
+        <div
+          class="flex flex-col lg:justify-between gap-y-6 p-[30px] lg:p-10 lg:gap-y-[14px] border border-grey5 lg:col-span-1"
+        >
+          <div
+            class="flex flex-row gap-x-[14px] lg:gap-x-0 lg:flex-col lg:items-start lg:gap-y-[30px] items-center"
+          >
+            <div
+              class="p-4 lg:p-5 w-[58px] h-[58px] border border-grey5 rounded-md bg-gradient-to-br from-grey5 to-grey1 lg:h-[70px] lg:w-[70px]"
+            >
+              <img src="assets/img/battery.svg" class="w-[26px] lg:w-[30px]" />
+            </div>
+            <h3 class="font-semibold text-xl lg:text-2xl">
+              Project Management
+            </h3>
+          </div>
+          <p
+            class="text-grey3 leading-normal text-sm lg:text-base lg:mb-[60px]"
+          >
+            Our experienced project management team ensures that your projects
+            are delivered on time, within budget, and according to your
+            specifications. We follow industry-standard methodologies and employ
+            effective communication and collaboration tools to keep you informed
+            throughout the development process.
+          </p>
+          <button class="bg-grey2 font-medium px-4 py-[14px] rounded-md">
+            <a href="#">Learn More</a>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="container mx-auto flex flex-col px-4 md:px-0">
+      <div
+        class="text-center px-4 lg:px-[250px] py-[50px] lg:py-[100px] bg-blend-overlay bg-grey1/90 border-x border-t border-grey5 bg-cover"
+        style="background-image: url(assets/img/bg-benefits.png)"
+      >
+        <h2
+          class="font-semibold text-[28px] lg:text-[38px] mb-[6px] lg:mx-[10px]"
+        >
+          Why Choose SquareUp?
+        </h2>
+        <p class="text-sm leading-6 lg:text-base">
+          Experience excellence in digital craftsmanship with our team of
+          skilled professionals dedicated to delivering exceptional results.
+        </p>
+      </div>
+      <div class="grid lg:grid-cols-2">
+        <div
+          class="flex flex-col lg:justify-between gap-y-6 px-[30px] py-10 lg:p-[60px] lg:gap-y-[30px] border border-grey5 lg:col-span-1"
+        >
+          <div class="flex flex-row gap-x-[14px] items-center">
+            <div
+              class="p-4 lg:p-5 w-[58px] h-[58px] border border-grey5 rounded-md bg-gradient-to-br from-grey5 to-grey1 lg:h-[70px] lg:w-[70px]"
+            >
+              <img src="assets/img/medal.svg" class="w-[26px] lg:w-[30px]" />
+            </div>
+            <h3 class="font-medium text-xl lg:text-2xl">Expertise</h3>
+          </div>
+          <p class="text-grey3 leading-normal text-sm lg:text-base">
+            Our team consists of highly skilled professionals who have a deep
+            understanding of the digital landscape. We stay updated with the
+            latest industry trends and best practices to deliver cutting-edge
+            solutions.
+          </p>
+        </div>
+        <div
+          class="flex flex-col gap-y-6 px-[30px] py-10 lg:p-[60px] lg:gap-y-[30px] border border-grey5 lg:col-span-1"
+        >
+          <div class="flex flex-row gap-x-[14px] items-center">
+            <div
+              class="p-4 lg:p-5 w-[58px] h-[58px] border border-grey5 rounded-md bg-gradient-to-br from-grey5 to-grey1 lg:h-[70px] lg:w-[70px]"
+            >
+              <img src="assets/img/client.svg" class="w-[26px] lg:w-[30px]" />
+            </div>
+            <h3 class="font-medium text-xl lg:text-2xl">
+              Client-Centric Approach
+            </h3>
+          </div>
+          <p class="text-grey3 leading-normal text-sm lg:text-base">
+            We prioritize our clients and their unique needs. We listen to your
+            ideas, challenges, and goals, and tailor our services to meet your
+            specific requirements. Your success is our success.
+          </p>
+        </div>
+        <div
+          class="flex flex-col lg:justify-between gap-y-6 px-[30px] py-10 lg:p-[60px] lg:gap-y-[30px] border border-grey5 lg:col-span-1"
+        >
+          <div class="flex flex-row gap-x-[14px] items-center">
+            <div
+              class="p-4 lg:p-5 w-[58px] h-[58px] border border-grey5 rounded-md bg-gradient-to-br from-grey5 to-grey1 lg:h-[70px] lg:w-[70px]"
+            >
+              <img src="assets/img/shield.svg" class="w-[26px] lg:w-[30px]" />
+            </div>
+            <h3 class="font-medium text-xl lg:text-2xl">
+              Results-Driven Solutions
+            </h3>
+          </div>
+          <p class="text-grey3 leading-normal text-sm lg:text-base">
+            Our primary focus is on delivering results. We combine creativity
+            and technical expertise to create digital products that drive
+            business growth, enhance user experiences, and provide a competitive
+            advantage.
+          </p>
+        </div>
+        <div
+          class="flex flex-col lg:justify-between gap-y-6 px-[30px] py-10 lg:p-[60px] lg:gap-y-[30px] border border-grey5 lg:col-span-1"
+        >
+          <div class="flex flex-row gap-x-[14px] items-center">
+            <div
+              class="p-4 lg:p-5 w-[58px] h-[58px] border border-grey5 rounded-md bg-gradient-to-br from-grey5 to-grey1 lg:h-[70px] lg:w-[70px]"
+            >
+              <img src="assets/img/crown.svg" class="w-[26px] lg:w-[30px]" />
+            </div>
+            <h3 class="font-medium text-xl lg:text-2xl">
+              Collaborative Partnership
+            </h3>
+          </div>
+          <p class="text-grey3 leading-normal text-sm lg:text-base">
+            We value long-term relationships with our clients. We see ourselves
+            as your digital partner, providing ongoing support, maintenance, and
+            updates to ensure your digital products continue to thrive.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="container mx-auto flex flex-col px-4 md:px-0">
+      <div
+        class="text-center px-4 lg:px-[250px] py-[50px] lg:py-[100px] bg-blend-overlay bg-grey1/90 border-x border-t border-grey5 bg-cover"
+        style="background-image: url(assets/img/bg-benefits.png)"
+      >
+        <h2
+          class="font-semibold text-[28px] lg:text-[38px] mb-[6px] lg:mx-[10px]"
+        >
+          What our Clients say About us
+        </h2>
+        <p class="text-sm leading-6 lg:text-base">
+          At SquareUp, we take pride in delivering exceptional digital products
+          and services that drive success for our clients. Here's what some of
+          our satisfied clients have to say about their experience working with
+          us
+        </p>
+      </div>
+      <div class="grid lg:grid-cols-2">
+        <div
+          class="px-6 py-10 border border-grey5 lg:col-span-1 lg:px-[60px] lg:py-20 lg:flex flex-col justify-between"
+        >
+          <h4
+            class="font-medium text-lg leading-normal text-green2 mb-5 lg:text-xl"
+          >
+            SquareUp has been Instrumental in Transforming our Online Presence.
+          </h4>
+          <p class="text-sm leading-normal text-grey3 mb-6 lg:text-base">
+            Their team's expertise in web development and design resulted in a
+            visually stunning and user-friendly e-commerce platform. Our online
+            sales have skyrocketed, and we couldn't be happier.
+          </p>
+          <div
+            class="flex flex-row p-[14px] items-center border border-grey5 rounded-md bg-grey5/20"
+          >
+            <img
+              src="assets/img/user1.png"
+              class="w-10 h-10 rounded lg:w-[50px] lg:h-[50px] mr-[10px]"
+            />
+            <div class="lg:mr-[6px] flex-grow">
+              <p class="leading-normal font-medium">John Smith</p>
+              <p class="leading-normal text-sm text-grey3">
+                CEO of Chic Boutique
+              </p>
+            </div>
+            <button class="hidden bg-grey2 px-4 py-[14px] rounded-md lg:block">
+              <a href="#">Open Website</a>
+            </button>
+          </div>
+        </div>
+        <div
+          class="px-6 py-10 border border-grey5 lg:col-span-1 lg:px-[60px] lg:py-20 lg:flex flex-col justify-between"
+        >
+          <h4
+            class="font-medium text-lg leading-normal text-green2 mb-5 lg:text-xl"
+          >
+            Working with SquareUp was a breeze.
+          </h4>
+          <p class="text-sm leading-normal text-grey3 mb-6 lg:text-base">
+            They understood our vision for a mobile app that streamlined our
+            food delivery service. The app they delivered exceeded our
+            expectations, and our customers love the seamless ordering
+            experience. SquareUp is a trusted partner we highly recommend.
+          </p>
+          <div
+            class="flex flex-row p-[14px] items-center border border-grey5 rounded-md bg-grey5/20"
+          >
+            <img
+              src="assets/img/user2.png"
+              class="w-10 h-10 rounded lg:w-[50px] lg:h-[50px] mr-[10px]"
+            />
+            <div class="lg:mr-[6px] flex-grow">
+              <p class="leading-normal font-medium">Sarah Johnson</p>
+              <p class="leading-normal text-sm text-grey3">
+                Founder of HungryBites.
+              </p>
+            </div>
+            <button class="hidden bg-grey2 px-4 py-[14px] rounded-md lg:block">
+              <a href="#">Open Website</a>
+            </button>
+          </div>
+        </div>
+        <div
+          class="px-6 py-10 border border-grey5 lg:col-span-1 lg:px-[60px] lg:py-20 lg:flex flex-col justify-between"
+        >
+          <h4
+            class="font-medium text-lg leading-normal text-green2 mb-5 lg:text-xl"
+          >
+            SquareUp developed a comprehensive booking and reservation system
+            for our event management company
+          </h4>
+          <p class="text-sm leading-normal text-grey3 mb-6 lg:text-base">
+            Their attention to detail and commitment to delivering a
+            user-friendly platform was evident throughout the project. The
+            system has streamlined our operations and enhanced our clients'
+            event experiences.
+          </p>
+          <div
+            class="flex flex-row p-[14px] items-center border border-grey5 rounded-md bg-grey5/20"
+          >
+            <img
+              src="assets/img/user3.png"
+              class="w-10 h-10 rounded lg:w-[50px] lg:h-[50px] mr-[10px]"
+            />
+            <div class="lg:mr-[6px] flex-grow">
+              <p class="leading-normal font-medium">Mark Thompson</p>
+              <p class="leading-normal text-sm text-grey3">
+                CEO of EventMasters
+              </p>
+            </div>
+            <button class="hidden bg-grey2 px-4 py-[14px] rounded-md lg:block">
+              <a href="#">Open Website</a>
+            </button>
+          </div>
+        </div>
+        <div
+          class="px-6 py-10 border border-grey5 lg:col-span-1 lg:px-[60px] lg:py-20 lg:flex flex-col justify-between"
+        >
+          <h4
+            class="font-medium text-lg leading-normal text-green2 mb-5 lg:text-xl"
+          >
+            ProTech Solutions turned to SquareUp to automate our workflow
+          </h4>
+          <p class="text-sm leading-normal text-grey3 mb-6 lg:text-base">
+            They delivered an exceptional custom software solution. The system
+            has significantly increased our productivity and reduced manual
+            errors. SquareUp's expertise and professionalism have made them a
+            trusted technology partner.
+          </p>
+          <div
+            class="flex flex-row p-[14px] items-center border border-grey5 rounded-md bg-grey5/20"
+          >
+            <img
+              src="assets/img/user4.png"
+              class="w-10 h-10 rounded lg:w-[50px] lg:h-[50px] mr-[10px]"
+            />
+            <div class="lg:mr-[6px] flex-grow">
+              <p class="leading-normal font-medium">Laura Adams</p>
+              <p class="leading-normal text-sm text-grey3">
+                COO of ProTech Solutions.
+              </p>
+            </div>
+            <button class="hidden bg-grey2 px-4 py-[14px] rounded-md lg:block">
+              <a href="#">Open Website</a>
+            </button>
+          </div>
+        </div>
+        <div
+          class="px-6 py-10 border border-grey5 lg:col-span-1 lg:px-[60px] lg:py-20 lg:flex flex-col justify-between"
+        >
+          <h4
+            class="font-medium text-lg leading-normal text-green2 mb-5 lg:text-xl"
+          >
+            SquareUp designed and developed a captivating web portal for
+            showcasing our real estate listings.
+          </h4>
+          <p class="text-sm leading-normal text-grey3 mb-6 lg:text-base">
+            The platform is visually appealing and easy to navigate, allowing
+            potential buyers to find their dream homes effortlessly. SquareUp's
+            expertise in the real estate industry is unmatched.
+          </p>
+          <div
+            class="flex flex-row p-[14px] items-center border border-grey5 rounded-md bg-grey5/20"
+          >
+            <img
+              src="assets/img/user5.png"
+              class="w-10 h-10 rounded lg:w-[50px] lg:h-[50px] mr-[10px]"
+            />
+            <div class="lg:mr-[6px] flex-grow">
+              <p class="leading-normal font-medium">Michael Anderson</p>
+              <p class="leading-normal text-sm text-grey3">
+                Founder of Dream Homes Realty.
+              </p>
+            </div>
+            <button class="hidden bg-grey2 px-4 py-[14px] rounded-md lg:block">
+              <a href="#">Open Website</a>
+            </button>
+          </div>
+        </div>
+        <div
+          class="px-6 py-10 border border-grey5 lg:col-span-1 lg:px-[60px] lg:py-20 lg:flex flex-col justify-between"
+        >
+          <h4
+            class="font-medium text-lg leading-normal text-green2 mb-5 lg:text-xl"
+          >
+            FitLife Tracker wanted a mobile app that tracked fitness activities
+            and provided personalized workout plans.
+          </h4>
+          <p class="text-sm leading-normal text-grey3 mb-6 lg:text-base">
+            SquareUp's team developed an intuitive and feature-rich app that has
+            helped our users stay motivated and achieve their fitness goals. We
+            highly recommend SquareUp for any health and fitness app development
+            needs.
+          </p>
+          <div
+            class="flex flex-row p-[14px] items-center border border-grey5 rounded-md bg-grey5/20"
+          >
+            <img
+              src="assets/img/user6.png"
+              class="w-10 h-10 rounded lg:w-[50px] lg:h-[50px] mr-[10px]"
+            />
+            <div class="lg:mr-[6px] flex-grow">
+              <p class="leading-normal font-medium">Emily Turner</p>
+              <p class="leading-normal text-sm text-grey3">
+                CEO of FitLife Tracker
+              </p>
+            </div>
+            <button class="hidden bg-grey2 px-4 py-[14px] rounded-md lg:block">
+              <a href="#">Open Website</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
