@@ -35,7 +35,7 @@
   </head>
   <body class="bg-grey1 text-white font-barlow">
     <nav
-      class="flex flex-row justify-between pt-10 lg:pt-5 pb-5 px-4 xl:px-20 border-b border-grey5"
+      class="flex flex-row justify-between pt-10 border-b border-grey5 lg:pt-5 pb-5 px-4 xl:px-20"
     >
       <img src="assets/img/logo.svg" class="w-[118px]" />
       <div class="p-[6px] lg:hidden">
@@ -1175,9 +1175,9 @@
           <a href="#">Start Project</a>
         </button>
       </div>
-      <div class="lg:px-[217px] lg:border lg:border-grey2">
+      <div class="lg:px-[217px] lg:border-x lg:border-t lg:border-grey2">
         <div
-          class="grid p-6 gap-y-[30px] border border-grey2 lg:grid-cols-2 lg:gap-x-[30px] lg:p-[60px]"
+          class="grid p-6 gap-y-[30px] border-x border-t border-grey2 lg:grid-cols-2 lg:gap-x-[30px] lg:p-[60px]"
         >
           <div
             class="flex flex-col gap-y-[14px] px-6 py-[18px] bg-grey5 rounded-md border border-grey2 lg:col-span-1 lg:px-[30px] lg:py-5 lg:gap-y-4"
@@ -1280,5 +1280,88 @@
         </div>
       </div>
     </section>
+
+    <!-- Footer -->
+    <footer
+      class="flex flex-col justify-between py-[30px] px-4 gap-y-[30px] border-t border-grey5 lg:py-10 lg:gap-y-10 xl:px-20"
+    >
+      <div
+        class="flex flex-col gap-y-[30px] lg:flex-row lg:justify-between lg:items-center"
+      >
+        <img src="assets/img/logo.svg" class="h-[50px] lg:h-10" />
+        <hr class="w-full border-grey2 lg:hidden" />
+        <ul
+          class="flex flex-row gap-5 flex-wrap justify-center font-medium leading-normal text-grey3"
+        >
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Work</a></li>
+          <li><a href="#">Process</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div
+          class="flex flex-col px-5 py-4 gap-y-[14px] border rounded-lg border-grey2 lg:flex-row lg:justify-center lg:items-center lg:gap-x-5 lg:p-[10px]"
+        >
+          <h5 class="text-center font-medium leading-normal text-grey3">
+            Stay Connected
+          </h5>
+          <div class="flex flex-row gap-x-[10px] justify-center">
+            <div
+              class="p-[14px] w-[52px] h-[52px] border border-grey5 rounded-md bg-gradient-to-b from-grey5 to-grey1 flex-none lg:p-4"
+            >
+              <img src="assets/img/facebook.svg" class="w-5 h-5" />
+            </div>
+            <div
+              class="p-[14px] w-[52px] h-[52px] border border-grey5 rounded-md bg-gradient-to-b from-grey5 to-grey1 flex-none lg:p-4"
+            >
+              <img src="assets/img/twitter.svg" class="w-5 h-5" />
+            </div>
+            <div
+              class="p-[14px] w-[52px] h-[52px] border border-grey5 rounded-md bg-gradient-to-b from-grey5 to-grey1 flex-none lg:p-4"
+            >
+              <img src="assets/img/linkedin.svg" class="w-5 h-5" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="hidden w-full border-grey2 lg:block" />
+      <div class="flex flex-col gap-y-5 lg:flex-row justify-between">
+        <div class="flex-row lg:flex lg:gap-x-[22px]">
+          <div
+            class="flex flex-row py-5 gap-x-[10px] items-center justify-center border-b border-grey2 lg:pt-0 lg:pb-3 lg:gap-x-[6px]"
+          >
+            <img src="assets/img/message.svg" class="w-6 h-6 lg:w-5 lg:h-5" />
+            <p class="text-lg leading-normal text-grey3 lg:text-base">
+              hello@squareup.com
+            </p>
+          </div>
+          <div
+            class="flex flex-row py-5 gap-x-[10px] items-center justify-center border-b border-grey2 lg:pt-0 lg:pb-3 lg:gap-x-[6px]"
+          >
+            <img src="assets/img/phone.svg" class="w-6 h-6 lg:w-5 lg:h-5" />
+            <p class="text-lg leading-normal text-grey3 lg:text-base">
+              +91 91813 23 2309
+            </p>
+          </div>
+          <div
+            class="flex flex-row py-5 gap-x-[10px] items-center justify-center border-b border-grey2 lg:pt-0 lg:pb-3 lg:gap-x-[6px]"
+          >
+            <img src="assets/img/location.svg" class="w-6 h-6 lg:w-5 lg:h-5" />
+            <p class="text-lg leading-normal text-grey3 lg:text-base">
+              Somewhere in the World
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col justify-center items-center">
+          <p
+            class="text-center leading-normal text-grey4 lg:text-sm align-middle"
+          >
+            © 2023 SquareUp. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
