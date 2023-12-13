@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Service Page - SquareUp</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              barlow: ["'Barlow'", "sans-serif"],
+            },
+            colors: {
+              grey1: "#1A1A1A",
+              grey2: "#262626",
+              grey3: "#E6E6E6",
+              grey4: "#98989A",
+              grey5: "#242424",
+              green1: "#9EFF00",
+              green2: "#D8FF99",
+              green3: "#C5FF66",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-grey1 text-white font-barlow">
+    <nav
+      class="flex flex-row justify-between pt-10 border-b border-grey5 lg:pt-5 pb-5 px-4 xl:px-20"
+    >
+      <img src="assets/img/logo.svg" class="w-[118px]" />
+      <div class="p-[6px] lg:hidden">
+        <img src="assets/img/menu.svg" class="w-[34px]" />
+      </div>
+      <ul
+        class="flex-row font-medium text-sm items-center hidden lg:flex text-grey3"
+      >
+        <li>
+          <a
+            href="/"
+            class="px-[22px] py-3 focus:bg-grey2 focus:font-semibold focus:rounded-md focus:text-white"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            href="service.html"
+            class="px-[22px] py-3 focus:bg-grey2 focus:font-semibold focus:rounded-md focus:text-white"
+            >Services</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="px-[22px] py-3 focus:bg-grey2 focus:font-semibold focus:rounded-md focus:text-white"
+            >Work</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="px-[22px] py-3 focus:bg-grey2 focus:font-semibold focus:rounded-md focus:text-white"
+            >Process</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="px-[22px] py-3 focus:bg-grey2 focus:font-semibold focus:rounded-md focus:text-white"
+            >About</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="px-[22px] py-3 focus:bg-grey2 focus:font-semibold focus:rounded-md focus:text-white"
+            >Careers</a
+          >
+        </li>
+      </ul>
+      <button
+        class="bg-green1 py-3 px-[18px] text-sm font-medium rounded-md text-grey2 hidden lg:block"
+      >
+        <a href="#">Contact Us</a>
+      </button>
+    </nav>
+
+    <!-- Services Section -->
+    <section class="container mx-auto flex flex-col px-4 md:px-0">
+      <div
+        class="text-center px-4 lg:px-[250px] py-[50px] lg:py-[100px] bg-blend-overlay bg-grey1/90 border-x border-t border-grey5 bg-cover"
+        style="background-image: url(assets/img/bg-services.png)"
+      >
+        <h1
+          class="font-semibold text-[28px] lg:text-[38px] mb-[6px] lg:mx-[10px]"
+        >
+          Our Services
+        </h1>
+        <p class="text-sm leading-6 lg:text-base">
+          Transform your brand with our innovative digital solutions that
+          captivate and engage your audience.
+        </p>
+      </div>
+      <!-- Design Section -->
+      <div
+        class="flex flex-col pt-10 gap-y-10 border-t border-x border-grey5 lg:pt-20"
+      >
+        <div class="px-4 lg:px-10">
+          <h2
+            class="font-semibold text-[28px] leading-tight mb-[6px] lg:text-[38px] lg:mb-[10px]"
+          >
+            Design
+          </h2>
+          <p
+            class="text-sm leading-normal text-grey3 mb-[30px] lg:text-base lg:mb-10 lg:w-9/12"
+          >
+            At Squareup, our design team is passionate about creating stunning,
+            user-centric designs that captivate your audience and elevate your
+            brand. We believe that great design is not just about aesthetics;
+            it's about creating seamless and intuitive user experiences.
+          </p>
+          <div class="p-[10px] bg-grey2 w-fit rounded-md">
+            <p class="text-base leading-tight lg:text-lg">
+              Our design services include:
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col gap-y-10">
+          <div class="flex flex-col gap-y-10 pt-10 border-t border-grey5">
+            <h3
+              class="font-medium leading-tight text-xl text-grey4 text-center lg:text-[22px] lg:text-start lg:ps-10"
+            >
+              User Experience (UX) Design
+            </h3>
+            <div class="grid grid-cols-2 lg:grid-cols-4">
+              <div
+                class="col-span-1 flex flex-col p-5 gap-y-5 border border-grey5 lg:p-10 lg:gap-y-6"
+              >
+                <div
+                  class="p-4 w-[52px] h-[52px] border border-grey5 rounded-md bg-gradient-to-b from-grey5 to-grey1 lg:p-5 lg:w-[64px] lg:h-[64px]"
+                >
+                  <img src="assets/img/ic-ur.svg" class="w-6 h-6" />
+                </div>
+                <p class="font-medium leading-normal text-grey3 tracking-tight">
+                  User Research and Persona Development
+                </p>
+              </div>
+              <div
+                class="col-span-1 flex flex-col p-5 gap-y-5 border border-grey5 lg:p-10 lg:gap-y-6"
+              >
+                <div
+                  class="p-4 w-[52px] h-[52px] border border-grey5 rounded-md bg-gradient-to-b from-grey5 to-grey1 lg:p-5 lg:w-[64px] lg:h-[64px]"
+                >
+                  <img src="assets/img/ic-ia.svg" class="w-6 h-6" />
+                </div>
+                <p class="font-medium leading-normal text-grey3 tracking-tight">
+                  Information Architecture and Wireframing
+                </p>
+              </div>
+              <div
+                class="col-span-1 flex flex-col p-5 gap-y-5 border border-grey5 lg:p-10 lg:gap-y-6"
+              >
+                <div
+                  class="p-4 w-[52px] h-[52px] border border-grey5 rounded-md bg-gradient-to-b from-grey5 to-grey1 lg:p-5 lg:w-[64px] lg:h-[64px]"
+                >
+                  <img src="assets/img/ic-ip.svg" class="w-6 h-6" />
+                </div>
+                <p class="font-medium leading-normal text-grey3 tracking-tight">
+                  Interactive Prototyping and User Testing
+                </p>
+              </div>
+              <div
+                class="col-span-1 flex flex-col p-5 gap-y-5 border border-grey5 lg:p-10 lg:gap-y-6"
+              >
+                <div
+                  class="p-4 w-[52px] h-[52px] border border-grey5 rounded-md bg-gradient-to-b from-grey5 to-grey1 lg:p-5 lg:w-[64px] lg:h-[64px]"
+                >
+                  <img src="assets/img/ic-ui.svg" class="w-6 h-6" />
+                </div>
+                <p class="font-medium leading-normal text-grey3 tracking-tight">
+                  UI Design and Visual Branding
+                </p>
+              </div>
+            </div>
+            <h3
+              class="font-medium leading-tight text-xl text-grey4 text-center lg:text-[22px] lg:text-start lg:ps-10"
+            >
+              User Interface (UI) Design
+            </h3>
+            <div class="grid grid-cols-2 lg:grid-cols-4">
+              <div
+                class="col-span-1 flex flex-col p-5 gap-y-5 border border-grey5 lg:p-10 lg:gap-y-6"
+              >
+                <div
+                  class="p-4 w-[52px] h-[52px] border border-grey5 rounded-md bg-gradient-to-b from-grey5 to-grey1 lg:p-5 lg:w-[64px] lg:h-[64px]"
+                >
+                  <img src="assets/img/ic-iv.svg" class="w-6 h-6" />
+                </div>
+                <p class="font-medium leading-normal text-grey3 tracking-tight">
+                  Intuitive and Visually Appealing Interface Design
+                </p>
+              </div>
+              <div
+                class="col-span-1 flex flex-col p-5 gap-y-5 border border-grey5 lg:p-10 lg:gap-y-6"
+              >
+                <div
+                  class="p-4 w-[52px] h-[52px] border border-grey5 rounded-md bg-gradient-to-b from-grey5 to-grey1 lg:p-5 lg:w-[64px] lg:h-[64px]"
+                >
+                  <img src="assets/img/ic-ci.svg" class="w-6 h-6" />
+                </div>
+                <p class="font-medium leading-normal text-grey3 tracking-tight">
+                  Custom icography and Illustration
+                </p>
+              </div>
+              <div
+                class="col-span-1 flex flex-col p-5 gap-y-5 border border-grey5 lg:p-10 lg:gap-y-6"
+              >
+                <div
+                  class="p-4 w-[52px] h-[52px] border border-grey5 rounded-md bg-gradient-to-b from-grey5 to-grey1 lg:p-5 lg:w-[64px] lg:h-[64px]"
+                >
+                  <img src="assets/img/ic-tc.svg" class="w-6 h-6" />
+                </div>
+                <p class="font-medium leading-normal text-grey3 tracking-tight">
+                  Typography and Color Palette Selection
+                </p>
+              </div>
+              <div
+                class="col-span-1 flex flex-col p-5 gap-y-5 border border-grey5 lg:p-10 lg:gap-y-6"
+              >
+                <div
+                  class="p-4 w-[52px] h-[52px] border border-grey5 rounded-md bg-gradient-to-b from-grey5 to-grey1 lg:p-5 lg:w-[64px] lg:h-[64px]"
+                >
+                  <img src="assets/img/ic-rd.svg" class="w-6 h-6" />
+                </div>
+                <p class="font-medium leading-normal text-grey3 tracking-tight">
+                  Responsive Design for Various Devices
+                </p>
+              </div>
+            </div>
+            <h3
+              class="font-medium leading-tight text-xl text-grey4 text-center lg:text-[22px] lg:text-start lg:ps-10"
+            >
+              Branding and Identity
+            </h3>
+            <div class="grid grid-cols-2 lg:grid-cols-4">
+              <div
+                class="col-span-1 flex flex-col p-5 gap-y-5 border border-grey5 lg:p-10 lg:gap-y-6"
+              >
+                <div
+                  class="p-4 w-[52px] h-[52px] border border-grey5 rounded-md bg-gradient-to-b from-grey5 to-grey1 lg:p-5 lg:w-[64px] lg:h-[64px]"
+                >
+                  <img src="assets/img/ic-ld.svg" class="w-6 h-6" />
+                </div>
+                <p class="font-medium leading-normal text-grey3 tracking-tight">
+                  Logo Design and Visual Identity Development
+                </p>
+              </div>
+              <div
+                class="col-span-1 flex flex-col p-5 gap-y-5 border border-grey5 lg:p-10 lg:gap-y-6"
+              >
+                <div
+                  class="p-4 w-[52px] h-[52px] border border-grey5 rounded-md bg-gradient-to-b from-grey5 to-grey1 lg:p-5 lg:w-[64px] lg:h-[64px]"
+                >
+                  <img src="assets/img/ic-bs.svg" class="w-6 h-6" />
+                </div>
+                <p class="font-medium leading-normal text-grey3 tracking-tight">
+                  Brand Strategy and Positioning
+                </p>
+              </div>
+              <div
+                class="col-span-1 flex flex-col p-5 gap-y-5 border border-grey5 lg:p-10 lg:gap-y-6"
+              >
+                <div
+                  class="p-4 w-[52px] h-[52px] border border-grey5 rounded-md bg-gradient-to-b from-grey5 to-grey1 lg:p-5 lg:w-[64px] lg:h-[64px]"
+                >
+                  <img src="assets/img/ic-bg.svg" class="w-6 h-6" />
+                </div>
+                <p class="font-medium leading-normal text-grey3 tracking-tight">
+                  Brand Guidelines and Style Guides
+                </p>
+              </div>
+              <div
+                class="col-span-1 flex flex-col p-5 gap-y-5 border border-grey5 lg:p-10 lg:gap-y-6"
+              >
+                <div
+                  class="p-4 w-[52px] h-[52px] border border-grey5 rounded-md bg-gradient-to-b from-grey5 to-grey1 lg:p-5 lg:w-[64px] lg:h-[64px]"
+                >
+                  <img src="assets/img/ic-mc.svg" class="w-6 h-6" />
+                </div>
+                <p class="font-medium leading-normal text-grey3 tracking-tight">
+                  Marketing Collateral Design (Brochures, Business Cards, etc.)
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Engineering Section -->
+      <div
+        class="flex flex-col pt-10 gap-y-10 border-t border-x border-grey5 lg:pt-20"
+      >
+        <div class="px-4 lg:px-10">
+          <h2
+            class="font-semibold text-[28px] leading-tight mb-[6px] lg:text-[38px] lg:mb-[10px]"
+          >
+            Engineering
+          </h2>
+          <p
+            class="text-sm leading-normal text-grey3 mb-[30px] lg:text-base lg:mb-10 lg:w-9/12"
+          >
+            Our engineering team combines technical expertise with a passion for
+            innovation to build robust and scalable digital solutions. We
+            leverage the latest technologies and best practices to deliver
+            high-performance applications tailored to your specific needs.
+          </p>
+          <div class="p-[10px] bg-grey2 w-fit rounded-md">
+            <p class="text-base leading-tight lg:text-lg">
+              Our engineering services include:
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col gap-y-10">
+          <div class="flex flex-col gap-y-10 pt-10 border-t border-grey5">
+            <h3
+              class="font-medium leading-tight text-xl text-grey4 text-center lg:text-[22px] lg:text-start lg:ps-10"
+            >
+              Web Development
+            </h3>
+            <div class="grid grid-cols-2 lg:grid-cols-4">
+              <div
+                class="col-span-1 flex flex-col p-5 gap-y-5 border border-grey5 lg:p-10 lg:gap-y-6"
+              >
+                <div
+                  class="p-4 w-[52px] h-[52px] border border-grey5 rounded-md bg-gradient-to-b from-grey5 to-grey1 lg:p-5 lg:w-[64px] lg:h-[64px]"
+                >
+                  <img src="assets/img/ic-fe.svg" class="w-6 h-6" />
+                </div>
+                <p class="font-medium leading-normal text-grey3 tracking-tight">
+                  Front-End Development (HTML, CSS, JavaScript)
+                </p>
+              </div>
+              <div
+                class="col-span-1 flex flex-col p-5 gap-y-5 border border-grey5 lg:p-10 lg:gap-y-6"
+              >
+                <div
+                  class="p-4 w-[52px] h-[52px] border border-grey5 rounded-md bg-gradient-to-b from-grey5 to-grey1 lg:p-5 lg:w-[64px] lg:h-[64px]"
+                >
+                  <img src="assets/img/ic-be.svg" class="w-6 h-6" />
+                </div>
+                <p class="font-medium leading-normal text-grey3 tracking-tight">
+                  Back-End Development (PHP, Python, Ruby)
+                </p>
+              </div>
+              <div
+                class="col-span-1 flex flex-col p-5 gap-y-5 border border-grey5 lg:p-10 lg:gap-y-6"
+              >
+                <div
+                  class="p-4 w-[52px] h-[52px] border border-grey5 rounded-md bg-gradient-to-b from-grey5 to-grey1 lg:p-5 lg:w-[64px] lg:h-[64px]"
+                >
+                  <img src="assets/img/ic-cms.svg" class="w-6 h-6" />
+                </div>
+                <p class="font-medium leading-normal text-grey3 tracking-tight">
+                  Content Management System (CMS) Development (WordPress,
+                  Drupal)
+                </p>
+              </div>
+              <div
+                class="col-span-1 flex flex-col p-5 gap-y-5 border border-grey5 lg:p-10 lg:gap-y-6"
+              >
+                <div
+                  class="p-4 w-[52px] h-[52px] border border-grey5 rounded-md bg-gradient-to-b from-grey5 to-grey1 lg:p-5 lg:w-[64px] lg:h-[64px]"
+                >
+                  <img src="assets/img/ic-ecp.svg" class="w-6 h-6" />
+                </div>
+                <p class="font-medium leading-normal text-grey3 tracking-tight">
+                  E-Commerce Platform Development (Magento, Shopify)
+                </p>
+              </div>
+            </div>
+            <h3
+              class="font-medium leading-tight text-xl text-grey4 text-center lg:text-[22px] lg:text-start lg:ps-10"
+            >
+              Mobile App Development
+            </h3>
+            <div class="grid grid-cols-2 lg:grid-cols-4">
+              <div
+                class="col-span-1 flex flex-col p-5 gap-y-5 border border-grey5 lg:p-10 lg:gap-y-6"
+              >
+                <div
+                  class="p-4 w-[52px] h-[52px] border border-grey5 rounded-md bg-gradient-to-b from-grey5 to-grey1 lg:p-5 lg:w-[64px] lg:h-[64px]"
+                >
+                  <img src="assets/img/ic-nm.svg" class="w-6 h-6" />
+                </div>
+                <p class="font-medium leading-normal text-grey3 tracking-tight">
+                  Native iOS and Android App Development
+                </p>
+              </div>
+              <div
+                class="col-span-1 flex flex-col p-5 gap-y-5 border border-grey5 lg:p-10 lg:gap-y-6"
+              >
+                <div
+                  class="p-4 w-[52px] h-[52px] border border-grey5 rounded-md bg-gradient-to-b from-grey5 to-grey1 lg:p-5 lg:w-[64px] lg:h-[64px]"
+                >
+                  <img src="assets/img/ic-cp.svg" class="w-6 h-6" />
+                </div>
+                <p class="font-medium leading-normal text-grey3 tracking-tight">
+                  Cross-Platform App Development (React Native, Flutter)
+                </p>
+              </div>
+              <div
+                class="col-span-1 flex flex-col p-5 gap-y-5 border border-grey5 lg:p-10 lg:gap-y-6"
+              >
+                <div
+                  class="p-4 w-[52px] h-[52px] border border-grey5 rounded-md bg-gradient-to-b from-grey5 to-grey1 lg:p-5 lg:w-[64px] lg:h-[64px]"
+                >
+                  <img src="assets/img/ic-ap.svg" class="w-6 h-6" />
+                </div>
+                <p class="font-medium leading-normal text-grey3 tracking-tight">
+                  Typography and Color Palette Selection
+                </p>
+              </div>
+              <div
+                class="col-span-1 flex flex-col p-5 gap-y-5 border border-grey5 lg:p-10 lg:gap-y-6"
+              >
+                <div
+                  class="p-4 w-[52px] h-[52px] border border-grey5 rounded-md bg-gradient-to-b from-grey5 to-grey1 lg:p-5 lg:w-[64px] lg:h-[64px]"
+                >
+                  <img src="assets/img/ic-at.svg" class="w-6 h-6" />
+                </div>
+                <p class="font-medium leading-normal text-grey3 tracking-tight">
+                  App Testing, Deployment, and Maintenance
+                </p>
+              </div>
+            </div>
+            <h3
+              class="font-medium leading-tight text-xl text-grey4 text-center lg:text-[22px] lg:text-start lg:ps-10"
+            >
+              Custom Software Development
+            </h3>
+            <div class="grid grid-cols-2 lg:grid-cols-4">
+              <div
+                class="col-span-1 flex flex-col p-5 gap-y-5 border border-grey5 lg:p-10 lg:gap-y-6"
+              >
+                <div
+                  class="p-4 w-[52px] h-[52px] border border-grey5 rounded-md bg-gradient-to-b from-grey5 to-grey1 lg:p-5 lg:w-[64px] lg:h-[64px]"
+                >
+                  <img src="assets/img/ic-es.svg" class="w-6 h-6" />
+                </div>
+                <p class="font-medium leading-normal text-grey3 tracking-tight">
+                  Enterprise Software Development
+                </p>
+              </div>
+              <div
+                class="col-span-1 flex flex-col p-5 gap-y-5 border border-grey5 lg:p-10 lg:gap-y-6"
+              >
+                <div
+                  class="p-4 w-[52px] h-[52px] border border-grey5 rounded-md bg-gradient-to-b from-grey5 to-grey1 lg:p-5 lg:w-[64px] lg:h-[64px]"
+                >
+                  <img src="assets/img/ic-cwa.svg" class="w-6 h-6" />
+                </div>
+                <p class="font-medium leading-normal text-grey3 tracking-tight">
+                  Custom Web Application Development
+                </p>
+              </div>
+              <div
+                class="col-span-1 flex flex-col p-5 gap-y-5 border border-grey5 lg:p-10 lg:gap-y-6"
+              >
+                <div
+                  class="p-4 w-[52px] h-[52px] border border-grey5 rounded-md bg-gradient-to-b from-grey5 to-grey1 lg:p-5 lg:w-[64px] lg:h-[64px]"
+                >
+                  <img src="assets/img/ic-tp.svg" class="w-6 h-6" />
+                </div>
+                <p class="font-medium leading-normal text-grey3 tracking-tight">
+                  Integration with Third-Party APIs and Systems
+                </p>
+              </div>
+              <div
+                class="col-span-1 flex flex-col p-5 gap-y-5 border border-grey5 lg:p-10 lg:gap-y-6"
+              >
+                <div
+                  class="p-4 w-[52px] h-[52px] border border-grey5 rounded-md bg-gradient-to-b from-grey5 to-grey1 lg:p-5 lg:w-[64px] lg:h-[64px]"
+                >
+                  <img src="assets/img/ic-ls.svg" class="w-6 h-6" />
+                </div>
+                <p class="font-medium leading-normal text-grey3 tracking-tight">
+                  Legacy System Modernization and Migration
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Management Section -->
+      <div
+        class="flex flex-col pt-10 gap-y-10 border-t border-x border-grey5 lg:pt-20"
+      >
+        <div class="px-4 lg:px-10">
+          <h2
+            class="font-semibold text-[28px] leading-tight mb-[6px] lg:text-[38px] lg:mb-[10px]"
+          >
+            Project Management
+          </h2>
+          <p
+            class="text-sm leading-normal text-grey3 mb-[30px] lg:text-base lg:mb-10 lg:w-9/12"
+          >
+            Our experienced project management team ensures that your projects
+            are delivered on time, within budget, and according to your
+            specifications. We follow industry-standard methodologies and employ
+            effective communication and collaboration tools to keep you informed
+            throughout the development process.
+          </p>
+          <div class="p-[10px] bg-grey2 w-fit rounded-md">
+            <p class="text-base leading-tight lg:text-lg">
+              Our project management services include:
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col gap-y-10">
+          <div class="flex flex-col gap-y-10 pt-10 border-t border-grey5">
+            <h3
+              class="font-medium leading-tight text-xl text-grey4 text-center lg:text-[22px] lg:text-start lg:ps-10"
+            >
+              Project Planning and Scoping
+            </h3>
+            <div class="grid grid-cols-2 lg:grid-cols-4">
+              <div
+                class="col-span-1 flex flex-col p-5 gap-y-5 border border-grey5 lg:p-10 lg:gap-y-6"
+              >
+                <div
+                  class="p-4 w-[52px] h-[52px] border border-grey5 rounded-md bg-gradient-to-b from-grey5 to-grey1 lg:p-5 lg:w-[64px] lg:h-[64px]"
+                >
+                  <img src="assets/img/ic-rg.svg" class="w-6 h-6" />
+                </div>
+                <p class="font-medium leading-normal text-grey3 tracking-tight">
+                  Requirements Gathering and Analysis
+                </p>
+              </div>
+              <div
+                class="col-span-1 flex flex-col p-5 gap-y-5 border border-grey5 lg:p-10 lg:gap-y-6"
+              >
+                <div
+                  class="p-4 w-[52px] h-[52px] border border-grey5 rounded-md bg-gradient-to-b from-grey5 to-grey1 lg:p-5 lg:w-[64px] lg:h-[64px]"
+                >
+                  <img src="assets/img/ic-pr.svg" class="w-6 h-6" />
+                </div>
+                <p class="font-medium leading-normal text-grey3 tracking-tight">
+                  Project Roadmap and Timeline Development
+                </p>
+              </div>
+              <div
+                class="col-span-1 flex flex-col p-5 gap-y-5 border border-grey5 lg:p-10 lg:gap-y-6"
+              >
+                <div
+                  class="p-4 w-[52px] h-[52px] border border-grey5 rounded-md bg-gradient-to-b from-grey5 to-grey1 lg:p-5 lg:w-[64px] lg:h-[64px]"
+                >
+                  <img src="assets/img/ic-ra.svg" class="w-6 h-6" />
+                </div>
+                <p class="font-medium leading-normal text-grey3 tracking-tight">
+                  Resource Allocation and Task Assignment
+                </p>
+              </div>
+              <div
+                class="col-span-1 flex flex-col p-5 gap-y-5 border border-grey5 lg:p-10 lg:gap-y-6"
+              >
+                <div
+                  class="p-4 w-[52px] h-[52px] border border-grey5 rounded-md bg-gradient-to-b from-grey5 to-grey1 lg:p-5 lg:w-[64px] lg:h-[64px]"
+                >
+                  <img src="assets/img/ic-ms.svg" class="w-6 h-6" />
+                </div>
+                <p class="font-medium leading-normal text-grey3 tracking-tight">
+                  Risk Assessment and Mitigation Strategies
+                </p>
+              </div>
+            </div>
+            <h3
+              class="font-medium leading-tight text-xl text-grey4 text-center lg:text-[22px] lg:text-start lg:ps-10"
+            >
+              Agile Development
+            </h3>
+            <div class="grid grid-cols-2 lg:grid-cols-4">
+              <div
+                class="col-span-1 flex flex-col p-5 gap-y-5 border border-grey5 lg:p-10 lg:gap-y-6"
+              >
+                <div
+                  class="p-4 w-[52px] h-[52px] border border-grey5 rounded-md bg-gradient-to-b from-grey5 to-grey1 lg:p-5 lg:w-[64px] lg:h-[64px]"
+                >
+                  <img src="assets/img/ic-id.svg" class="w-6 h-6" />
+                </div>
+                <p class="font-medium leading-normal text-grey3 tracking-tight">
+                  Iterative Development and Sprints
+                </p>
+              </div>
+              <div
+                class="col-span-1 flex flex-col p-5 gap-y-5 border border-grey5 lg:p-10 lg:gap-y-6"
+              >
+                <div
+                  class="p-4 w-[52px] h-[52px] border border-grey5 rounded-md bg-gradient-to-b from-grey5 to-grey1 lg:p-5 lg:w-[64px] lg:h-[64px]"
+                >
+                  <img src="assets/img/ic-s.svg" class="w-6 h-6" />
+                </div>
+                <p class="font-medium leading-normal text-grey3 tracking-tight">
+                  Scrum or Kanban Methodology Implementation
+                </p>
+              </div>
+              <div
+                class="col-span-1 flex flex-col p-5 gap-y-5 border border-grey5 lg:p-10 lg:gap-y-6"
+              >
+                <div
+                  class="p-4 w-[52px] h-[52px] border border-grey5 rounded-md bg-gradient-to-b from-grey5 to-grey1 lg:p-5 lg:w-[64px] lg:h-[64px]"
+                >
+                  <img src="assets/img/ic-rp.svg" class="w-6 h-6" />
+                </div>
+                <p class="font-medium leading-normal text-grey3 tracking-tight">
+                  Regular Progress Updates and Demos
+                </p>
+              </div>
+              <div
+                class="col-span-1 flex flex-col p-5 gap-y-5 border border-grey5 lg:p-10 lg:gap-y-6"
+              >
+                <div
+                  class="p-4 w-[52px] h-[52px] border border-grey5 rounded-md bg-gradient-to-b from-grey5 to-grey1 lg:p-5 lg:w-[64px] lg:h-[64px]"
+                >
+                  <img src="assets/img/ic-fi.svg" class="w-6 h-6" />
+                </div>
+                <p class="font-medium leading-normal text-grey3 tracking-tight">
+                  Continuous Improvement and Feedback Incorporation
+                </p>
+              </div>
+            </div>
+            <h3
+              class="font-medium leading-tight text-xl text-grey4 text-center lg:text-[22px] lg:text-start lg:ps-10"
+            >
+              Quality Assurance and Testing
+            </h3>
+            <div class="grid grid-cols-2 lg:grid-cols-4">
+              <div
+                class="col-span-1 flex flex-col p-5 gap-y-5 border border-grey5 lg:p-10 lg:gap-y-6"
+              >
+                <div
+                  class="p-4 w-[52px] h-[52px] border border-grey5 rounded-md bg-gradient-to-b from-grey5 to-grey1 lg:p-5 lg:w-[64px] lg:h-[64px]"
+                >
+                  <img src="assets/img/ic-tpe.svg" class="w-6 h-6" />
+                </div>
+                <p class="font-medium leading-normal text-grey3 tracking-tight">
+                  Test Planning and Execution
+                </p>
+              </div>
+              <div
+                class="col-span-1 flex flex-col p-5 gap-y-5 border border-grey5 lg:p-10 lg:gap-y-6"
+              >
+                <div
+                  class="p-4 w-[52px] h-[52px] border border-grey5 rounded-md bg-gradient-to-b from-grey5 to-grey1 lg:p-5 lg:w-[64px] lg:h-[64px]"
+                >
+                  <img src="assets/img/ic-ut.svg" class="w-6 h-6" />
+                </div>
+                <p class="font-medium leading-normal text-grey3 tracking-tight">
+                  Functional and Usability Testing
+                </p>
+              </div>
+              <div
+                class="col-span-1 flex flex-col p-5 gap-y-5 border border-grey5 lg:p-10 lg:gap-y-6"
+              >
+                <div
+                  class="p-4 w-[52px] h-[52px] border border-grey5 rounded-md bg-gradient-to-b from-grey5 to-grey1 lg:p-5 lg:w-[64px] lg:h-[64px]"
+                >
+                  <img src="assets/img/ic-st.svg" class="w-6 h-6" />
+                </div>
+                <p class="font-medium leading-normal text-grey3 tracking-tight">
+                  Performance and Security Testing
+                </p>
+              </div>
+              <div
+                class="col-span-1 flex flex-col p-5 gap-y-5 border border-grey5 lg:p-10 lg:gap-y-6"
+              >
+                <div
+                  class="p-4 w-[52px] h-[52px] border border-grey5 rounded-md bg-gradient-to-b from-grey5 to-grey1 lg:p-5 lg:w-[64px] lg:h-[64px]"
+                >
+                  <img src="assets/img/ic-bt.svg" class="w-6 h-6" />
+                </div>
+                <p class="font-medium leading-normal text-grey3 tracking-tight">
+                  Bug Tracking and Issue Resolution
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="container mx-auto flex flex-col px-4 md:px-0">
+      <div
+        class="flex flex-col text-center px-4 py-[50px] gap-y-7 bg-blend-overlay bg-grey1/90 border-x border-t border-grey5 bg-cover justify-center items-center lg:px-[250px] lg:py-[100px] lg:gap-y-10"
+        style="background-image: url(assets/img/bg-contact.png)"
+      >
+        <div
+          class="w-[50px] h-[50px] rounded-md bg-green1 flex flex-row justify-center items-center lg:w-[60px] lg:h-[60px]"
+        >
+          <img src="assets/img/cube.svg" class="h-8 lg:h-9" />
+        </div>
+        <div>
+          <h2
+            class="font-semibold text-2xl leading-tight mb-[6px] lg:mb-[10px] lg:text-[30px]"
+          >
+            Let us Bring your Ideas to Life in the Digital World.
+          </h2>
+          <p
+            class="text-sm leading-6 text-grey3 lg:text-base lg:leading-normal"
+          >
+            No matter which services you choose, we are committed to delivering
+            exceptional results that exceed your expectations. Our
+            multidisciplinary team works closely together to ensure seamless
+            collaboration and a unified vision for your digital product.
+          </p>
+        </div>
+        <button
+          class="bg-green1 py-[14px] px-6 text-sm font-medium rounded-md text-grey1 lg:px-6 lg:py-[14px]"
+        >
+          <a href="#">Start Project</a>
+        </button>
+      </div>
+    </section>
+
+    <footer
+      class="flex flex-col justify-between py-[30px] px-4 gap-y-[30px] border-t border-grey5 lg:py-10 lg:gap-y-10 xl:px-20"
+    >
+      <div
+        class="flex flex-col gap-y-[30px] lg:flex-row lg:justify-between lg:items-center"
+      >
+        <img src="assets/img/logo.svg" class="h-[50px] lg:h-10" />
+        <hr class="w-full border-grey2 lg:hidden" />
+        <ul
+          class="flex flex-row gap-5 flex-wrap justify-center font-medium leading-normal text-grey3"
+        >
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Work</a></li>
+          <li><a href="#">Process</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div
+          class="flex flex-col px-5 py-4 gap-y-[14px] border rounded-lg border-grey2 lg:flex-row lg:justify-center lg:items-center lg:gap-x-5 lg:p-[10px]"
+        >
+          <h5 class="text-center font-medium leading-normal text-grey3">
+            Stay Connected
+          </h5>
+          <div class="flex flex-row gap-x-[10px] justify-center">
+            <div
+              class="p-[14px] w-[52px] h-[52px] border border-grey5 rounded-md bg-gradient-to-b from-grey5 to-grey1 flex-none lg:p-4"
+            >
+              <img src="assets/img/facebook.svg" class="w-5 h-5" />
+            </div>
+            <div
+              class="p-[14px] w-[52px] h-[52px] border border-grey5 rounded-md bg-gradient-to-b from-grey5 to-grey1 flex-none lg:p-4"
+            >
+              <img src="assets/img/twitter.svg" class="w-5 h-5" />
+            </div>
+            <div
+              class="p-[14px] w-[52px] h-[52px] border border-grey5 rounded-md bg-gradient-to-b from-grey5 to-grey1 flex-none lg:p-4"
+            >
+              <img src="assets/img/linkedin.svg" class="w-5 h-5" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="hidden w-full border-grey2 lg:block" />
+      <div class="flex flex-col gap-y-5 lg:flex-row justify-between">
+        <div class="flex-row lg:flex lg:gap-x-[22px]">
+          <div
+            class="flex flex-row py-5 gap-x-[10px] items-center justify-center border-b border-grey2 lg:pt-0 lg:pb-3 lg:gap-x-[6px]"
+          >
+            <img src="assets/img/message.svg" class="w-6 h-6 lg:w-5 lg:h-5" />
+            <p class="text-lg leading-normal text-grey3 lg:text-base">
+              hello@squareup.com
+            </p>
+          </div>
+          <div
+            class="flex flex-row py-5 gap-x-[10px] items-center justify-center border-b border-grey2 lg:pt-0 lg:pb-3 lg:gap-x-[6px]"
+          >
+            <img src="assets/img/phone.svg" class="w-6 h-6 lg:w-5 lg:h-5" />
+            <p class="text-lg leading-normal text-grey3 lg:text-base">
+              +91 91813 23 2309
+            </p>
+          </div>
+          <div
+            class="flex flex-row py-5 gap-x-[10px] items-center justify-center border-b border-grey2 lg:pt-0 lg:pb-3 lg:gap-x-[6px]"
+          >
+            <img src="assets/img/location.svg" class="w-6 h-6 lg:w-5 lg:h-5" />
+            <p class="text-lg leading-normal text-grey3 lg:text-base">
+              Somewhere in the World
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col justify-center items-center">
+          <p
+            class="text-center leading-normal text-grey4 lg:text-sm align-middle"
+          >
+            © 2023 SquareUp. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
