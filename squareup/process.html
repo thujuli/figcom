@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Process Page - SquareUp</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              barlow: ["'Barlow'", "sans-serif"],
+              inter: ["'Inter'", "sans-serif"],
+            },
+            colors: {
+              grey1: "#1A1A1A",
+              grey2: "#262626",
+              grey3: "#E6E6E6",
+              grey4: "#98989A",
+              grey5: "#242424",
+              green1: "#9EFF00",
+              green2: "#D8FF99",
+              green3: "#C5FF66",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-grey1 text-white font-barlow">
+    <nav
+      class="flex flex-row justify-between pt-10 border-b border-grey5 lg:pt-5 pb-5 px-4 xl:px-20"
+    >
+      <img src="assets/img/logo.svg" class="w-[118px]" />
+      <div class="p-[6px] lg:hidden">
+        <img src="assets/img/menu.svg" class="w-[34px]" />
+      </div>
+      <ul
+        class="flex-row font-medium text-sm items-center hidden lg:flex text-grey3"
+      >
+        <li>
+          <a
+            href="index.html"
+            class="px-[22px] py-3 focus:bg-grey2 focus:font-semibold focus:rounded-md focus:text-white"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            href="service.html"
+            class="px-[22px] py-3 focus:bg-grey2 focus:font-semibold focus:rounded-md focus:text-white"
+            >Services</a
+          >
+        </li>
+        <li>
+          <a
+            href="work.html"
+            class="px-[22px] py-3 focus:bg-grey2 focus:font-semibold focus:rounded-md focus:text-white"
+            >Work</a
+          >
+        </li>
+        <li>
+          <a
+            href="process.html"
+            class="px-[22px] py-3 focus:bg-grey2 focus:font-semibold focus:rounded-md focus:text-white"
+            >Process</a
+          >
+        </li>
+        <li>
+          <a
+            href="about.html"
+            class="px-[22px] py-3 focus:bg-grey2 focus:font-semibold focus:rounded-md focus:text-white"
+            >About</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="px-[22px] py-3 focus:bg-grey2 focus:font-semibold focus:rounded-md focus:text-white"
+            >Careers</a
+          >
+        </li>
+      </ul>
+      <button
+        class="bg-green1 py-3 px-[18px] text-sm font-medium rounded-md text-grey2 hidden lg:block"
+      >
+        <a href="#">Contact Us</a>
+      </button>
+    </nav>
+
+    <!-- Process Section -->
+    <section class="container mx-auto flex flex-col px-4 md:px-0">
+      <div
+        class="text-center px-4 lg:px-[250px] py-[50px] lg:py-[100px] bg-blend-overlay bg-grey1/90 border-x border-t border-grey5 bg-cover"
+        style="background-image: url(assets/img/bg-process.png)"
+      >
+        <h1
+          class="font-semibold text-[28px] lg:text-[38px] mb-[6px] lg:mx-[10px]"
+        >
+          Process of Starting the Project
+        </h1>
+        <p class="text-sm leading-6 lg:text-lg">
+          At SquareUp, we value transparency, collaboration, and delivering
+          exceptional results.
+        </p>
+      </div>
+      <div
+        class="grid pt-10 border-t border-x border-grey5 lg:pt-20 lg:grid-cols-2"
+      >
+        <div class="px-4 lg:px-10 pb-10 lg:col-span-2">
+          <h2
+            class="font-semibold text-[28px] leading-tight mb-[6px] lg:text-[38px] lg:mb-[10px]"
+          >
+            At SquareUp
+          </h2>
+          <p
+            class="text-sm leading-normal text-grey3 mb-[30px] lg:text-base lg:mb-10 lg:w-9/12"
+          >
+            We follow a structured and collaborative process to ensure the
+            successful delivery of exceptional digital products. Our process
+            combines industry best practices, creative thinking, and a
+            client-centric approach.
+          </p>
+          <div class="p-[10px] bg-grey2 w-fit rounded-md">
+            <p class="text-base leading-tight lg:text-lg">
+              Here's an overview of our typical process:
+            </p>
+          </div>
+        </div>
+        <div
+          class="flex flex-col gap-y-[30px] py-10 px-6 border border-grey5 lg:col-span-1 lg:py-20 lg:px-10 lg:gap-y-10"
+        >
+          <div class="flex flex-row gap-x-[10px] lg:gap-x-[14px]">
+            <p
+              class="flex-none font-semibold text-[80px] leading-none text-green2 lg:text-[120px]"
+            >
+              01
+            </p>
+            <div
+              class="border-b border-grey5 flex-grow flex flex-col justify-end pb-[14px] pl-[10px] lg:pb-5 lg:text-2xl"
+            >
+              <h3 class="text-grey4 font-medium text-xl">Discovery</h3>
+            </div>
+          </div>
+          <p class="text-sm text-grey4 leading-normal font-inter lg:text-base">
+            We begin by thoroughly understanding your business goals, target
+            audience, and project requirements. We conduct in-depth research to
+            gather insights and define project objectives, allowing us to
+            develop a tailored strategy.
+          </p>
+        </div>
+        <div
+          class="flex flex-col gap-y-[30px] py-10 px-6 border border-grey5 lg:col-span-1 lg:py-20 lg:px-10 lg:gap-y-10"
+        >
+          <div class="flex flex-row gap-x-[10px] lg:gap-x-[14px]">
+            <p
+              class="flex-none font-semibold text-[80px] leading-none text-green2 lg:text-[120px]"
+            >
+              02
+            </p>
+            <div
+              class="border-b border-grey5 flex-grow flex flex-col justify-end pb-[14px] pl-[10px] lg:pb-5 lg:text-2xl"
+            >
+              <h3 class="text-grey4 font-medium text-xl">
+                Planning and Strategy
+              </h3>
+            </div>
+          </div>
+          <p class="text-sm text-grey4 leading-normal font-inter lg:text-base">
+            Based on the gathered information, we create a comprehensive project
+            plan and strategy. This includes defining project milestones,
+            timelines, deliverables, and resource allocation. We collaborate
+            closely with you to align our strategy with your vision.
+          </p>
+        </div>
+        <div
+          class="flex flex-col gap-y-[30px] py-10 px-6 border border-grey5 lg:col-span-1 lg:py-20 lg:px-10 lg:gap-y-10"
+        >
+          <div class="flex flex-row gap-x-[10px] lg:gap-x-[14px]">
+            <p
+              class="flex-none font-semibold text-[80px] leading-none text-green2 lg:text-[120px]"
+            >
+              03
+            </p>
+            <div
+              class="border-b border-grey5 flex-grow flex flex-col justify-end pb-[14px] pl-[10px] lg:pb-5 lg:text-2xl"
+            >
+              <h3 class="text-grey4 font-medium text-xl">Design</h3>
+            </div>
+          </div>
+          <p class="text-sm text-grey4 leading-normal font-inter lg:text-base">
+            Our expert designers translate the project requirements into
+            captivating visual designs. We create wireframes, mockups, and
+            interactive prototypes to showcase the user interface, user
+            experience, and overall design aesthetics. We iterate on the designs
+            based on your feedback until we achieve the perfect look and feel.
+          </p>
+        </div>
+        <div
+          class="flex flex-col gap-y-[30px] py-10 px-6 border border-grey5 lg:col-span-1 lg:py-20 lg:px-10 lg:gap-y-10"
+        >
+          <div class="flex flex-row gap-x-[10px] lg:gap-x-[14px]">
+            <p
+              class="flex-none font-semibold text-[80px] leading-none text-green2 lg:text-[120px]"
+            >
+              04
+            </p>
+            <div
+              class="border-b border-grey5 flex-grow flex flex-col justify-end pb-[14px] pl-[10px] lg:pb-5 lg:text-2xl"
+            >
+              <h3 class="text-grey4 font-medium text-xl">Development</h3>
+            </div>
+          </div>
+          <p class="text-sm text-grey4 leading-normal font-inter lg:text-base">
+            Once the designs are approved, our skilled development team brings
+            them to life. We use cutting-edge technologies and coding best
+            practices to build robust and scalable digital products. Throughout
+            the development phase, we maintain open lines of communication to
+            keep you updated on progress and address any questions or concerns.
+          </p>
+        </div>
+        <div
+          class="flex flex-col gap-y-[30px] py-10 px-6 border border-grey5 lg:col-span-1 lg:py-20 lg:px-10 lg:gap-y-10"
+        >
+          <div class="flex flex-row gap-x-[10px] lg:gap-x-[14px]">
+            <p
+              class="flex-none font-semibold text-[80px] leading-none text-green2 lg:text-[120px]"
+            >
+              05
+            </p>
+            <div
+              class="border-b border-grey5 flex-grow flex flex-col justify-end pb-[14px] pl-[10px] lg:pb-5 lg:text-2xl"
+            >
+              <h3 class="text-grey4 font-medium text-xl">
+                Testing and Quality Assurance
+              </h3>
+            </div>
+          </div>
+          <p class="text-sm text-grey4 leading-normal font-inter lg:text-base">
+            We conduct rigorous testing to ensure that your digital product
+            functions flawlessly across different devices, browsers, and
+            operating systems. Our quality assurance team meticulously checks
+            for bugs, usability issues, and performance bottlenecks. We strive
+            for a seamless user experience and a high level of reliability.
+          </p>
+        </div>
+        <div
+          class="flex flex-col gap-y-[30px] py-10 px-6 border border-grey5 lg:col-span-1 lg:py-20 lg:px-10 lg:gap-y-10"
+        >
+          <div class="flex flex-row gap-x-[10px] lg:gap-x-[14px]">
+            <p
+              class="flex-none font-semibold text-[80px] leading-none text-green2 lg:text-[120px]"
+            >
+              06
+            </p>
+            <div
+              class="border-b border-grey5 flex-grow flex flex-col justify-end pb-[14px] pl-[10px] lg:pb-5 lg:text-2xl"
+            >
+              <h3 class="text-grey4 font-medium text-xl">
+                Deployment and Launch
+              </h3>
+            </div>
+          </div>
+          <p class="text-sm text-grey4 leading-normal font-inter lg:text-base">
+            When your digital product is thoroughly tested and meets your
+            satisfaction, we prepare for deployment. We handle all the technical
+            aspects of launching your product, ensuring a smooth transition from
+            development to the live environment. We assist with setting up
+            hosting, configuring servers, and managing any required
+            integrations.
+          </p>
+        </div>
+        <div
+          class="flex flex-col gap-y-[30px] py-10 px-6 border border-grey5 lg:col-span-1 lg:py-20 lg:px-10 lg:gap-y-10"
+        >
+          <div class="flex flex-row gap-x-[10px] lg:gap-x-[14px]">
+            <p
+              class="flex-none font-semibold text-[80px] leading-none text-green2 lg:text-[120px]"
+            >
+              07
+            </p>
+            <div
+              class="border-b border-grey5 flex-grow flex flex-col justify-end pb-[14px] pl-[10px] lg:pb-5 lg:text-2xl"
+            >
+              <h3 class="text-grey4 font-medium text-xl">
+                Post-Launch Support
+              </h3>
+            </div>
+          </div>
+          <p class="text-sm text-grey4 leading-normal font-inter lg:text-base">
+            Our commitment to your success doesn't end with the launch. We
+            provide ongoing support and maintenance services to ensure your
+            digital product continues to perform optimally. We offer different
+            support packages based on your needs, including bug fixes, feature
+            enhancements, security updates, and technical support.
+          </p>
+        </div>
+        <div
+          class="flex flex-col gap-y-[30px] py-10 px-6 border border-grey5 lg:col-span-1 lg:py-20 lg:px-10 lg:gap-y-10"
+        >
+          <div class="flex flex-row gap-x-[10px] lg:gap-x-[14px]">
+            <p
+              class="flex-none font-semibold text-[80px] leading-none text-green2 lg:text-[120px]"
+            >
+              08
+            </p>
+            <div
+              class="border-b border-grey5 flex-grow flex flex-col justify-end pb-[14px] pl-[10px] lg:pb-5 lg:text-2xl"
+            >
+              <h3 class="text-grey4 font-medium text-xl">
+                Continuous Improvement
+              </h3>
+            </div>
+          </div>
+          <p class="text-sm text-grey4 leading-normal font-inter lg:text-base">
+            We believe in continuous improvement and strive to optimize your
+            digital product even after launch. We monitor user feedback,
+            analytics, and market trends to identify opportunities for
+            enhancement and growth. We proactively suggest improvements and
+            updates to keep your digital product ahead of the curve.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="container mx-auto flex flex-col px-4 md:px-0">
+      <div
+        class="flex flex-col text-center px-4 py-[50px] gap-y-7 bg-blend-overlay bg-grey1/90 border-x border-t border-grey5 bg-cover justify-center items-center lg:px-[250px] lg:py-[100px] lg:gap-y-10"
+        style="background-image: url(assets/img/bg-contact.png)"
+      >
+        <div
+          class="w-[50px] h-[50px] rounded-md bg-green1 flex flex-row justify-center items-center lg:w-[60px] lg:h-[60px]"
+        >
+          <img src="assets/img/cube.svg" class="h-8 lg:h-9" />
+        </div>
+        <div>
+          <h2
+            class="font-semibold text-2xl leading-tight mb-[6px] lg:mb-[10px] lg:text-[30px]"
+          >
+            Thank you for your Interest in SquareUp.
+          </h2>
+          <p
+            class="text-sm leading-6 text-grey3 lg:text-base lg:leading-normal"
+          >
+            We would love to hear from you and discuss how we can help bring
+            your digital ideas to life. Here are the different ways you can get
+            in touch with us.
+          </p>
+        </div>
+        <button
+          class="bg-green1 py-[14px] px-6 text-sm font-medium rounded-md text-grey1 lg:px-6 lg:py-[14px]"
+        >
+          <a href="#">Start Project</a>
+        </button>
+      </div>
+      <div class="lg:px-[217px] lg:border-x lg:border-t lg:border-grey2">
+        <div
+          class="grid p-6 gap-y-[30px] border-x border-t border-grey2 lg:grid-cols-2 lg:gap-x-[30px] lg:p-[60px]"
+        >
+          <div
+            class="flex flex-col gap-y-[14px] px-6 py-[18px] bg-grey5 rounded-md border border-grey2 lg:col-span-1 lg:px-[30px] lg:py-5 lg:gap-y-4"
+          >
+            <label for="full-name" class="font-medium leading-normal lg:text-lg"
+              >Full Name</label
+            >
+            <input
+              type="text"
+              id="full-name"
+              placeholder="Type Here"
+              class="text-[#656567] bg-grey5 leading-normal border-b pb-[6px] border-[#333333] focus:outline-none focus:border-b-2"
+            />
+          </div>
+          <div
+            class="flex flex-col gap-y-[14px] px-6 py-[18px] bg-grey5 rounded-md border border-grey2 lg:col-span-1 lg:px-[30px] lg:py-5 lg:gap-y-4"
+          >
+            <label for="email" class="font-medium leading-normal lg:text-lg"
+              >Email</label
+            >
+            <input
+              type="email"
+              id="email"
+              placeholder="Type Here"
+              class="text-[#656567] bg-grey5 leading-normal border-b pb-[6px] border-[#333333] focus:outline-none focus:border-b-2"
+            />
+          </div>
+          <div
+            class="flex flex-col gap-y-[30px] p-[30px] bg-grey5 rounded-md border border-grey2 lg:col-span-2"
+          >
+            <p class="font-medium leading-normal lg:text-lg">
+              Why are you contacting us?
+            </p>
+            <div class="grid gap-y-5 lg:grid-cols-2 lg:gap-y-6">
+              <div class="flex flex-row gap-x-[10px] lg:col-span-1">
+                <input type="checkbox" id="web-design" class="" />
+                <label for="web-design" class="leading-normal text-[#FDFFFA]"
+                  >Web Design</label
+                >
+              </div>
+              <div class="flex flex-row gap-x-[10px] lg:col-span-1">
+                <input type="checkbox" id="collaboration" class="" />
+                <label for="collaboration" class="leading-normal text-[#FDFFFA]"
+                  >Collaboration</label
+                >
+              </div>
+              <div class="flex flex-row gap-x-[10px] lg:col-span-1">
+                <input type="checkbox" id="mobile-app" class="" />
+                <label for="mobile-app" class="leading-normal text-[#FDFFFA]"
+                  >Mobile App Design</label
+                >
+              </div>
+              <div class="flex flex-row gap-x-[10px] lg:col-span-1">
+                <input type="checkbox" id="others" class="" />
+                <label for="others" class="leading-normal text-[#FDFFFA]"
+                  >Others</label
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex flex-col gap-y-6 px-6 pt-6 pb-[50px] bg-grey5 rounded-md border border-grey2 lg:col-span-2 lg:p-[30px] lg:gap-y-[30px]"
+          >
+            <div>
+              <p
+                class="font-medium leading-normal mb-[6px] lg:mb-[14px] lg:text-lg"
+              >
+                Your Budget
+              </p>
+              <p class="text-sm">Slide to indicate your budget range</p>
+            </div>
+            <div class="flex flex-col gap-y-5">
+              <div class="flex flex-row gap-x-[10px]">
+                <input type="range" class="w-full" />
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex flex-col gap-y-[14px] px-6 py-[18px] bg-grey5 rounded-md border border-grey2 lg:col-span-2 lg:px-[30px] lg:py-5 lg:gap-y-5"
+          >
+            <label for="message" class="font-medium leading-normal lg:text-lg"
+              >Your Message</label
+            >
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="2"
+              placeholder="Type Here"
+              class="text-[#656567] bg-grey5 leading-normal border-b pb-[6px] border-[#333333] focus:outline-none focus:border-b-2"
+            ></textarea>
+          </div>
+          <div class="lg:col-span-2">
+            <button
+              class="bg-green1 py-[14px] px-9 leading-normal text-sm font-medium rounded-md text-grey1 lg:col-span-2 w-full lg:w-fit lg:block lg:mx-auto"
+            >
+              <a href="#">Submit</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      class="flex flex-col justify-between py-[30px] px-4 gap-y-[30px] border-t border-grey5 lg:py-10 lg:gap-y-10 xl:px-20"
+    >
+      <div
+        class="flex flex-col gap-y-[30px] lg:flex-row lg:justify-between lg:items-center"
+      >
+        <img src="assets/img/logo.svg" class="h-[50px] lg:h-10" />
+        <hr class="w-full border-grey2 lg:hidden" />
+        <ul
+          class="flex flex-row gap-5 flex-wrap justify-center font-medium leading-normal text-grey3"
+        >
+          <li><a href="index.html">Home</a></li>
+          <li><a href="service.html">Services</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="process.html">Process</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div
+          class="flex flex-col px-5 py-4 gap-y-[14px] border rounded-lg border-grey2 lg:flex-row lg:justify-center lg:items-center lg:gap-x-5 lg:p-[10px]"
+        >
+          <h5 class="text-center font-medium leading-normal text-grey3">
+            Stay Connected
+          </h5>
+          <div class="flex flex-row gap-x-[10px] justify-center">
+            <div
+              class="p-[14px] w-[52px] h-[52px] border border-grey5 rounded-md bg-gradient-to-b from-grey5 to-grey1 flex-none lg:p-4"
+            >
+              <img src="assets/img/facebook.svg" class="w-5 h-5" />
+            </div>
+            <div
+              class="p-[14px] w-[52px] h-[52px] border border-grey5 rounded-md bg-gradient-to-b from-grey5 to-grey1 flex-none lg:p-4"
+            >
+              <img src="assets/img/twitter.svg" class="w-5 h-5" />
+            </div>
+            <div
+              class="p-[14px] w-[52px] h-[52px] border border-grey5 rounded-md bg-gradient-to-b from-grey5 to-grey1 flex-none lg:p-4"
+            >
+              <img src="assets/img/linkedin.svg" class="w-5 h-5" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="hidden w-full border-grey2 lg:block" />
+      <div class="flex flex-col gap-y-5 lg:flex-row justify-between">
+        <div class="flex-row lg:flex lg:gap-x-[22px]">
+          <div
+            class="flex flex-row py-5 gap-x-[10px] items-center justify-center border-b border-grey2 lg:pt-0 lg:pb-3 lg:gap-x-[6px]"
+          >
+            <img src="assets/img/message.svg" class="w-6 h-6 lg:w-5 lg:h-5" />
+            <p class="text-lg leading-normal text-grey3 lg:text-base">
+              hello@squareup.com
+            </p>
+          </div>
+          <div
+            class="flex flex-row py-5 gap-x-[10px] items-center justify-center border-b border-grey2 lg:pt-0 lg:pb-3 lg:gap-x-[6px]"
+          >
+            <img src="assets/img/phone.svg" class="w-6 h-6 lg:w-5 lg:h-5" />
+            <p class="text-lg leading-normal text-grey3 lg:text-base">
+              +91 91813 23 2309
+            </p>
+          </div>
+          <div
+            class="flex flex-row py-5 gap-x-[10px] items-center justify-center border-b border-grey2 lg:pt-0 lg:pb-3 lg:gap-x-[6px]"
+          >
+            <img src="assets/img/location.svg" class="w-6 h-6 lg:w-5 lg:h-5" />
+            <p class="text-lg leading-normal text-grey3 lg:text-base">
+              Somewhere in the World
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col justify-center items-center">
+          <p
+            class="text-center leading-normal text-grey4 lg:text-sm align-middle"
+          >
+            © 2023 SquareUp. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
