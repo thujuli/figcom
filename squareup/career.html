@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Career Page - SquareUp</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              barlow: ["'Barlow'", "sans-serif"],
+              inter: ["'Inter'", "sans-serif"],
+            },
+            colors: {
+              grey1: "#1A1A1A",
+              grey2: "#262626",
+              grey3: "#E6E6E6",
+              grey4: "#98989A",
+              grey5: "#242424",
+              green1: "#9EFF00",
+              green2: "#D8FF99",
+              green3: "#C5FF66",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-grey1 text-white font-barlow">
+    <nav
+      class="flex flex-row justify-between pt-10 border-b border-grey5 lg:pt-5 pb-5 px-4 xl:px-20"
+    >
+      <img src="assets/img/logo.svg" class="w-[118px]" />
+      <div class="p-[6px] lg:hidden">
+        <img src="assets/img/menu.svg" class="w-[34px]" />
+      </div>
+      <ul
+        class="flex-row font-medium text-sm items-center hidden lg:flex text-grey3"
+      >
+        <li>
+          <a
+            href="index.html"
+            class="px-[22px] py-3 focus:bg-grey2 focus:font-semibold focus:rounded-md focus:text-white"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            href="service.html"
+            class="px-[22px] py-3 focus:bg-grey2 focus:font-semibold focus:rounded-md focus:text-white"
+            >Services</a
+          >
+        </li>
+        <li>
+          <a
+            href="work.html"
+            class="px-[22px] py-3 focus:bg-grey2 focus:font-semibold focus:rounded-md focus:text-white"
+            >Work</a
+          >
+        </li>
+        <li>
+          <a
+            href="process.html"
+            class="px-[22px] py-3 focus:bg-grey2 focus:font-semibold focus:rounded-md focus:text-white"
+            >Process</a
+          >
+        </li>
+        <li>
+          <a
+            href="about.html"
+            class="px-[22px] py-3 focus:bg-grey2 focus:font-semibold focus:rounded-md focus:text-white"
+            >About</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="px-[22px] py-3 focus:bg-grey2 focus:font-semibold focus:rounded-md focus:text-white"
+            >Careers</a
+          >
+        </li>
+      </ul>
+      <button
+        class="bg-green1 py-3 px-[18px] text-sm font-medium rounded-md text-grey2 hidden lg:block"
+      >
+        <a href="#">Contact Us</a>
+      </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="container mx-auto flex flex-col px-4 md:px-0">
+      <div
+        class="text-center px-4 lg:px-[250px] py-[50px] lg:py-[100px] bg-blend-overlay bg-grey1/90 border-x border-t border-grey5 bg-cover"
+        style="background-image: url(assets/img/bg-career.png)"
+      >
+        <h1
+          class="font-semibold text-[28px] lg:text-[38px] mb-[6px] lg:mx-[10px]"
+        >
+          Join Our Team at SquareUp
+        </h1>
+        <p class="text-sm leading-6 lg:text-lg">
+          Unlock your potential and join our team of innovators and problem
+          solvers.
+        </p>
+      </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="container mx-auto px-4 lg:px-0">
+      <div
+        class="flex flex-col border-t border-x border-grey5 gap-y-10 pt-10 lg:pt-20"
+      >
+        <div class="flex flex-col px-4 lg:px-10">
+          <div class="lg:w-10/12">
+            <h1
+              class="mb-[6px] text-[28px] font-semibold lg:mb-[10px] lg:text-[38px]"
+            >
+              Welcome to SquareUp, where talent meets opportunity!
+            </h1>
+            <p
+              class="mb-[30px] text-sm leading-normal text-grey3 lg:text-base lg:mb-10"
+            >
+              At SquareUp, we believe that the success of our agency lies in the
+              talent, passion, and dedication of our team members. We are a
+              digital product agency that thrives on innovation, creativity, and
+              collaboration. If you're ready to make a difference and contribute
+              to cutting-edge projects, we invite you to explore career
+              opportunities with us.
+            </p>
+          </div>
+
+          <p class="text-base p-[10px] bg-grey2 rounded-md w-fit lg:text-lg">
+            Why Work at SquareUp?
+          </p>
+        </div>
+        <div class="grid lg:grid-cols-2">
+          <div
+            class="flex flex-col px-6 py-10 gap-y-5 border border-grey5 col-span-1 lg:px-10 lg:py-20 lg:gap-y-0"
+          >
+            <h2
+              class="font-medium text-[26px] text-green2 leading-tight lg:text-[32px] lg:leading-normal"
+            >
+              Innovative and Impactful Projects
+            </h2>
+            <hr class="border-grey5 border lg:mt-10 lg:mb-[30px]" />
+            <p
+              class="font-inter leading-normal text-sm text-grey4 lg:text-base"
+            >
+              At SquareUp, you'll have the opportunity to work on exciting and
+              impactful projects that shape the digital landscape. From
+              designing intuitive user interfaces to developing robust software
+              solutions, you'll be part of a team that creates products that
+              make a difference.
+            </p>
+          </div>
+          <div
+            class="flex flex-col px-6 py-10 gap-y-5 border border-grey5 col-span-1 lg:px-10 lg:py-20 lg:gap-y-0"
+          >
+            <h2
+              class="font-medium text-[26px] text-green2 leading-tight lg:text-[32px] lg:leading-normal"
+            >
+              Supportive Environment
+            </h2>
+            <hr class="border-grey5 border lg:mt-10 lg:mb-[30px]" />
+            <p
+              class="font-inter leading-normal text-sm text-grey4 lg:text-base"
+            >
+              At SquareUp, you'll have the opportunity to work on exciting and
+              impactful projects that shape the digital landscape. From
+              designing intuitive user interfaces to developing robust software
+              solutions, you'll be part of a team that creates products that
+              make a difference.
+            </p>
+          </div>
+          <div
+            class="flex flex-col px-6 py-10 gap-y-5 border border-grey5 col-span-1 lg:px-10 lg:py-20 lg:gap-y-0"
+          >
+            <h2
+              class="font-medium text-[26px] text-green2 leading-tight lg:text-[32px] lg:leading-normal"
+            >
+              Continuous Learning and Growth
+            </h2>
+            <hr class="border-grey5 border lg:mt-10 lg:mb-[30px]" />
+            <p
+              class="font-inter leading-normal text-sm text-grey4 lg:text-base"
+            >
+              We believe in investing in our team's growth and development. We
+              provide opportunities for continuous learning, whether it's
+              through workshops, training programs, or attending industry
+              conferences. At SquareUp, you'll have the chance to expand your
+              skill set and stay up-to-date with the latest trends and
+              technologies.
+            </p>
+          </div>
+          <div
+            class="flex flex-col px-6 py-10 gap-y-5 border border-grey5 col-span-1 lg:px-10 lg:py-20 lg:gap-y-0"
+          >
+            <h2
+              class="font-medium text-[26px] text-green2 leading-tight lg:text-[32px] lg:leading-normal"
+            >
+              Challenging and Rewarding Work
+            </h2>
+            <hr class="border-grey5 border lg:mt-10 lg:mb-[30px]" />
+            <p
+              class="font-inter leading-normal text-sm text-grey4 lg:text-base"
+            >
+              Our projects are challenging, but the rewards are even greater. We
+              tackle complex problems and push ourselves to deliver innovative
+              solutions. You'll be empowered to take ownership of your work,
+              make a real impact, and see your ideas come to life.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Job Section -->
+    <section class="container mx-auto px-4 lg:px-0">
+      <div
+        class="flex flex-col border-t border-x border-grey5 gap-y-10 pt-10 lg:pt-20"
+      >
+        <div class="flex flex-col px-4 lg:px-10">
+          <div class="lg:w-10/12">
+            <h2
+              class="mb-[6px] text-[28px] font-semibold lg:mb-[10px] lg:text-[38px]"
+            >
+              Current Openings
+            </h2>
+            <p class="text-sm leading-normal text-grey3 lg:text-base">
+              We are always on the lookout for talented individuals who are
+              passionate about creating exceptional digital experiences. Whether
+              you're a designer, engineer, project manager, or have skills that
+              align with our agency's mission, we encourage you to explore our
+              open positions.
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col pt-10 gap-y-10 border-t border-grey5">
+          <div class="flex flex-col gap-y-10">
+            <h3
+              class="text-center text-xl font-medium text-grey4 lg:text-start lg:pl-10 lg:text-[22px]"
+            >
+              Design Job Openings
+            </h3>
+            <div class="grid lg:grid-cols-3">
+              <div
+                class="flex flex-col p-6 col-span-1 border border-grey5 lg:p-10 lg:justify-between"
+              >
+                <div>
+                  <div
+                    class="flex justify-center items-center w-[52px] h-[52px] border border-grey5 rounded-md bg-gradient-to-b from-grey5 to-grey1 mb-6 lg:w-[64px] lg:h-[64px]"
+                  >
+                    <img src="assets/img/ic-iv.svg" class="w-6 h-6" />
+                  </div>
+                  <h4 class="mb-[14px] font-medium text-xl leading-normal">
+                    UI Designer
+                  </h4>
+                  <p
+                    class="mb-[30px] text-sm leading-normal text-grey3 lg:text-base"
+                  >
+                    Bring your creativity and expertise to our team as a UI
+                    Designer. Collaborate with cross-functional teams to design
+                    visually stunning and user-friendly interfaces. Utilize your
+                    skills in layout design, typography, and color theory to
+                    create engaging digital experiences that leave a lasting
+                    impression.
+                  </p>
+                </div>
+                <a
+                  href="#"
+                  class="px-4 py-[14px] bg-grey2 text-sm rounded-md text-center font-medium"
+                  >Apply Now</a
+                >
+              </div>
+              <div
+                class="flex flex-col p-6 col-span-1 border border-grey5 lg:p-10"
+              >
+                <div>
+                  <div
+                    class="flex justify-center items-center w-[52px] h-[52px] border border-grey5 rounded-md bg-gradient-to-b from-grey5 to-grey1 mb-6 lg:w-[64px] lg:h-[64px]"
+                  >
+                    <img src="assets/img/ic-ia.svg" class="w-6 h-6" />
+                  </div>
+                  <h4 class="mb-[14px] font-medium text-xl leading-normal">
+                    UX Designer
+                  </h4>
+                  <p
+                    class="mb-[30px] text-sm leading-normal text-grey3 lg:text-base"
+                  >
+                    Join us as a UX Designer and help shape exceptional user
+                    experiences. Conduct user research, analyze data, and create
+                    wireframes and prototypes to design intuitive and
+                    user-centric interfaces. Collaborate closely with UI
+                    Designers, developers, and stakeholders to ensure seamless
+                    and enjoyable user journeys.
+                  </p>
+                </div>
+                <a
+                  href="#"
+                  class="px-4 py-[14px] bg-grey2 text-sm rounded-md text-center font-medium"
+                  >Apply Now</a
+                >
+              </div>
+              <div
+                class="flex flex-col p-6 col-span-1 border border-grey5 lg:p-10 lg:justify-between"
+              >
+                <div>
+                  <div
+                    class="flex justify-center items-center w-[52px] h-[52px] border border-grey5 rounded-md bg-gradient-to-b from-grey5 to-grey1 mb-6 lg:w-[64px] lg:h-[64px]"
+                  >
+                    <img src="assets/img/ic-dh.svg" class="w-6 h-6" />
+                  </div>
+                  <h4 class="mb-[14px] font-medium text-xl leading-normal">
+                    Design Head
+                  </h4>
+                  <p
+                    class="mb-[30px] text-sm leading-normal text-grey3 lg:text-base"
+                  >
+                    Lead our design team as a Design Head and drive the creative
+                    vision of our products. Provide strategic direction,
+                    mentorship, and guidance to UI and UX designers. Collaborate
+                    with cross-functional teams to ensure design consistency and
+                    elevate our brand identity through innovative and visually
+                    impactful designs.
+                  </p>
+                </div>
+                <a
+                  href="#"
+                  class="px-4 py-[14px] bg-grey2 text-sm rounded-md text-center font-medium"
+                  >Apply Now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-y-10">
+            <h3
+              class="text-center text-xl font-medium text-grey4 lg:text-start lg:pl-10 lg:text-[22px]"
+            >
+              Development Job Openings
+            </h3>
+            <div class="grid lg:grid-cols-3">
+              <div
+                class="flex flex-col p-6 col-span-1 border border-grey5 lg:p-10 lg:justify-between"
+              >
+                <div>
+                  <div
+                    class="flex justify-center items-center w-[52px] h-[52px] border border-grey5 rounded-md bg-gradient-to-b from-grey5 to-grey1 mb-6 lg:w-[64px] lg:h-[64px]"
+                  >
+                    <img src="assets/img/ic-fe.svg" class="w-6 h-6" />
+                  </div>
+                  <h4 class="mb-[14px] font-medium text-xl leading-normal">
+                    Front - End Developer
+                  </h4>
+                  <p
+                    class="mb-[30px] text-sm leading-normal text-grey3 lg:text-base"
+                  >
+                    Join our team as a Front-End Developer and bring our designs
+                    to life. Transform UI/UX wireframes into interactive web
+                    interfaces using HTML, CSS, and JavaScript. Collaborate
+                    closely with designers and back-end developers to ensure
+                    seamless integration and optimal user experiences.
+                  </p>
+                </div>
+                <a
+                  href="#"
+                  class="px-4 py-[14px] bg-grey2 text-sm rounded-md text-center font-medium"
+                  >Apply Now</a
+                >
+              </div>
+              <div
+                class="flex flex-col p-6 col-span-1 border border-grey5 lg:p-10 lg:justify-between"
+              >
+                <div>
+                  <div
+                    class="flex justify-center items-center w-[52px] h-[52px] border border-grey5 rounded-md bg-gradient-to-b from-grey5 to-grey1 mb-6 lg:w-[64px] lg:h-[64px]"
+                  >
+                    <img src="assets/img/ic-be.svg" class="w-6 h-6" />
+                  </div>
+                  <h4 class="mb-[14px] font-medium text-xl leading-normal">
+                    Back - End Developer
+                  </h4>
+                  <p
+                    class="mb-[30px] text-sm leading-normal text-grey3 lg:text-base"
+                  >
+                    Be part of our team as a Backend Developer and contribute to
+                    building robust and scalable web applications. Develop
+                    server-side logic, integrate databases, and optimize system
+                    performance. Collaborate with front-end developers to ensure
+                    smooth communication between the server and the user
+                    interface.
+                  </p>
+                </div>
+                <a
+                  href="#"
+                  class="px-4 py-[14px] bg-grey2 text-sm rounded-md text-center font-medium"
+                  >Apply Now</a
+                >
+              </div>
+              <div
+                class="flex flex-col p-6 col-span-1 border border-grey5 lg:p-10 lg:justify-between"
+              >
+                <div>
+                  <div
+                    class="flex justify-center items-center w-[52px] h-[52px] border border-grey5 rounded-md bg-gradient-to-b from-grey5 to-grey1 mb-6 lg:w-[64px] lg:h-[64px]"
+                  >
+                    <img src="assets/img/ic-cms.svg" class="w-6 h-6" />
+                  </div>
+                  <h4 class="mb-[14px] font-medium text-xl leading-normal">
+                    Full Stack Developer
+                  </h4>
+                  <p
+                    class="mb-[30px] text-sm leading-normal text-grey3 lg:text-base"
+                  >
+                    Join us as a Full Stack Developer and take on end-to-end
+                    responsibility for web application development. Combine your
+                    skills in both front-end and back-end technologies to create
+                    dynamic and responsive websites. Collaborate with designers,
+                    developers, and stakeholders to deliver comprehensive and
+                    user-friendly solutions.
+                  </p>
+                </div>
+                <a
+                  href="#"
+                  class="px-4 py-[14px] bg-grey2 text-sm rounded-md text-center font-medium"
+                  >Apply Now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-y-10">
+            <h3
+              class="text-center text-xl font-medium text-grey4 lg:text-start lg:pl-10 lg:text-[22px]"
+            >
+              Management Job Openings
+            </h3>
+            <div class="grid lg:grid-cols-3">
+              <div
+                class="flex flex-col p-6 col-span-1 border border-grey5 lg:p-10 lg:justify-between"
+              >
+                <div>
+                  <div
+                    class="flex justify-center items-center w-[52px] h-[52px] border border-grey5 rounded-md bg-gradient-to-b from-grey5 to-grey1 mb-6 lg:w-[64px] lg:h-[64px]"
+                  >
+                    <img src="assets/img/ic-rp.svg" class="w-6 h-6" />
+                  </div>
+                  <h4 class="mb-[14px] font-medium text-xl leading-normal">
+                    BA Manager
+                  </h4>
+                  <p
+                    class="mb-[30px] text-sm leading-normal text-grey3 lg:text-base"
+                  >
+                    Lead our business analysis team as a BA Manager and drive
+                    strategic initiatives. Gather and analyze requirements,
+                    facilitate communication between stakeholders, and ensure
+                    project alignment with business objectives. Provide
+                    leadership and mentorship to a team of talented business
+                    analysts.
+                  </p>
+                </div>
+                <a
+                  href="#"
+                  class="px-4 py-[14px] bg-grey2 text-sm rounded-md text-center font-medium"
+                  >Apply Now</a
+                >
+              </div>
+              <div
+                class="flex flex-col p-6 col-span-1 border border-grey5 lg:p-10 lg:justify-between"
+              >
+                <div>
+                  <div
+                    class="flex justify-center items-center w-[52px] h-[52px] border border-grey5 rounded-md bg-gradient-to-b from-grey5 to-grey1 mb-6 lg:w-[64px] lg:h-[64px]"
+                  >
+                    <img src="assets/img/ic-s.svg" class="w-6 h-6" />
+                  </div>
+                  <h4 class="mb-[14px] font-medium text-xl leading-normal">
+                    Project Manager
+                  </h4>
+                  <p
+                    class="mb-[30px] text-sm leading-normal text-grey3 lg:text-base"
+                  >
+                    Join our team as a Project Manager and oversee the
+                    successful delivery of projects from initiation to
+                    completion. Define project scope, manage timelines and
+                    resources, and ensure effective communication across
+                    cross-functional teams. Utilize your leadership and
+                    organizational skills to drive project success.
+                  </p>
+                </div>
+                <a
+                  href="#"
+                  class="px-4 py-[14px] bg-grey2 text-sm rounded-md text-center font-medium"
+                  >Apply Now</a
+                >
+              </div>
+              <div
+                class="flex flex-col p-6 col-span-1 border border-grey5 lg:p-10 lg:justify-between"
+              >
+                <div>
+                  <div
+                    class="flex justify-center items-center w-[52px] h-[52px] border border-grey5 rounded-md bg-gradient-to-b from-grey5 to-grey1 mb-6 lg:w-[64px] lg:h-[64px]"
+                  >
+                    <img src="assets/img/ic-hr.svg" class="w-6 h-6" />
+                  </div>
+                  <h4 class="mb-[14px] font-medium text-xl leading-normal">
+                    HR Manager
+                  </h4>
+                  <p
+                    class="mb-[30px] text-sm leading-normal text-grey3 lg:text-base"
+                  >
+                    Be part of our team as an HR Manager and play a vital role
+                    in managing our human resources. Lead talent acquisition,
+                    employee engagement, and performance management initiatives.
+                    Collaborate with leadership to develop and implement HR
+                    strategies that foster a positive and inclusive work
+                    culture.
+                  </p>
+                </div>
+                <a
+                  href="#"
+                  class="px-4 py-[14px] bg-grey2 text-sm rounded-md text-center font-medium"
+                  >Apply Now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-y-10">
+            <h3
+              class="text-center text-xl font-medium text-grey4 lg:text-start lg:pl-10 lg:text-[22px]"
+            >
+              QA Job Openings
+            </h3>
+            <div class="grid lg:grid-cols-3">
+              <div
+                class="flex flex-col p-6 col-span-1 border border-grey5 lg:p-10 lg:justify-between"
+              >
+                <div>
+                  <div
+                    class="flex justify-center items-center w-[52px] h-[52px] border border-grey5 rounded-md bg-gradient-to-b from-grey5 to-grey1 mb-6 lg:w-[64px] lg:h-[64px]"
+                  >
+                    <img src="assets/img/ic-bt.svg" class="w-6 h-6" />
+                  </div>
+                  <h4 class="mb-[14px] font-medium text-xl leading-normal">
+                    QA Tester
+                  </h4>
+                  <p
+                    class="mb-[30px] text-sm leading-normal text-grey3 lg:text-base"
+                  >
+                    Ensure the quality of our software products as a QA Tester.
+                    Develop test plans, execute test cases, and identify and
+                    report software defects. Collaborate with developers and
+                    stakeholders to ensure that our products meet high-quality
+                    standards and deliver an exceptional user experience.
+                  </p>
+                </div>
+                <a
+                  href="#"
+                  class="px-4 py-[14px] bg-grey2 text-sm rounded-md text-center font-medium"
+                  >Apply Now</a
+                >
+              </div>
+              <div
+                class="flex flex-col p-6 col-span-1 border border-grey5 lg:p-10 lg:justify-between"
+              >
+                <div>
+                  <div
+                    class="flex justify-center items-center w-[52px] h-[52px] border border-grey5 rounded-md bg-gradient-to-b from-grey5 to-grey1 mb-6 lg:w-[64px] lg:h-[64px]"
+                  >
+                    <img src="assets/img/ic-st.svg" class="w-6 h-6" />
+                  </div>
+                  <h4 class="mb-[14px] font-medium text-xl leading-normal">
+                    SQL Tester
+                  </h4>
+                  <p
+                    class="mb-[30px] text-sm leading-normal text-grey3 lg:text-base"
+                  >
+                    Join us as an SQL Tester and play a key role in testing and
+                    validating the integrity of our databases. Write complex SQL
+                    queries to perform data validation and identify any
+                    anomalies. Collaborate with developers and QA testers to
+                    ensure the accuracy and reliability of our data.
+                  </p>
+                </div>
+                <a
+                  href="#"
+                  class="px-4 py-[14px] bg-grey2 text-sm rounded-md text-center font-medium"
+                  >Apply Now</a
+                >
+              </div>
+              <div
+                class="flex flex-col p-6 col-span-1 border border-grey5 lg:p-10 lg:justify-between"
+              >
+                <div>
+                  <div
+                    class="flex justify-center items-center w-[52px] h-[52px] border border-grey5 rounded-md bg-gradient-to-b from-grey5 to-grey1 mb-6 lg:w-[64px] lg:h-[64px]"
+                  >
+                    <img src="assets/img/ic-ut.svg" class="w-6 h-6" />
+                  </div>
+                  <h4 class="mb-[14px] font-medium text-xl leading-normal">
+                    Manual Tester
+                  </h4>
+                  <p
+                    class="mb-[30px] text-sm leading-normal text-grey3 lg:text-base"
+                  >
+                    Be part of our team as a Manual Tester and perform
+                    comprehensive manual testing to ensure the quality and
+                    functionality of our software applications. Develop test
+                    cases, execute test scripts, and document test results.
+                    Collaborate with developers and QA testers to troubleshoot
+                    issues and enhance software performance.
+                  </p>
+                </div>
+                <a
+                  href="#"
+                  class="px-4 py-[14px] bg-grey2 text-sm rounded-md text-center font-medium"
+                  >Apply Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="container mx-auto flex flex-col px-4 md:px-0">
+      <div
+        class="flex flex-col px-6 py-10 gap-y-[30px] border-x border-grey5 lg:p-[60px] lg:gap-y-10"
+      >
+        <div class="flex flex-col gap-y-6 lg:flex-row lg:gap-x-[30px]">
+          <div
+            class="flex justify-center items-center rounded-xl bg-green1 w-[80px] h-[80px] mx-auto flex-none lg:w-[100px] lg:h-[100px]"
+          >
+            <img src="assets/img/cube.svg" class="h-[48px] lg:h-[60px]" />
+          </div>
+          <div class="text-grey4 text-center lg:text-start">
+            <h3 class="mb-[10px] font-medium text-xl lg:mb-[14px] lg:text-2xl">
+              Today, SquareUp Continues to Thrive as a Leading Digital Product
+              Agency.....
+            </h3>
+            <p class="text-sm leading-normal font-inter lg:text-base">
+              Combining the power of design, engineering, and project management
+              to create transformative digital experiences. They invite you to
+              join them on their journey and discover how they can help bring
+              your digital ideas to life.
+            </p>
+          </div>
+        </div>
+        <div
+          class="flex flex-col border border-grey5 bg-grey5/20 rounded-[10px] p-5 gap-y-5 lg:flex-row lg:px-[30px] lg:gap-x-5"
+        >
+          <div
+            class="flex flex-col text-center lg:flex-row lg:gap-x-[14px] lg:flex-grow"
+          >
+            <h4 class="mb-[14px] text-lg text-grey4 my-auto">
+              Welcome to SquareUp
+            </h4>
+            <p class="bg-grey2 px-[14px] py-[10px] leading-normal rounded-md">
+              Where collaboration, Expertise, and Client-Centricity Intersect to
+              Shape the Future of Digital Innovation.
+            </p>
+          </div>
+          <button
+            class="bg-green1 py-[14px] px-5 text-sm leading-normal font-medium rounded-md text-grey1 lg:flex-none"
+          >
+            <a href="#">Start Project</a>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      class="flex flex-col justify-between py-[30px] px-4 gap-y-[30px] border-t border-grey5 lg:py-10 lg:gap-y-10 xl:px-20"
+    >
+      <div
+        class="flex flex-col gap-y-[30px] lg:flex-row lg:justify-between lg:items-center"
+      >
+        <img src="assets/img/logo.svg" class="h-[50px] lg:h-10" />
+        <hr class="w-full border-grey2 lg:hidden" />
+        <ul
+          class="flex flex-row gap-5 flex-wrap justify-center font-medium leading-normal text-grey3"
+        >
+          <li><a href="index.html">Home</a></li>
+          <li><a href="service.html">Services</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="process.html">Process</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div
+          class="flex flex-col px-5 py-4 gap-y-[14px] border rounded-lg border-grey2 lg:flex-row lg:justify-center lg:items-center lg:gap-x-5 lg:p-[10px]"
+        >
+          <h5 class="text-center font-medium leading-normal text-grey3">
+            Stay Connected
+          </h5>
+          <div class="flex flex-row gap-x-[10px] justify-center">
+            <div
+              class="p-[14px] w-[52px] h-[52px] border border-grey5 rounded-md bg-gradient-to-b from-grey5 to-grey1 flex-none lg:p-4"
+            >
+              <img src="assets/img/facebook.svg" class="w-5 h-5" />
+            </div>
+            <div
+              class="p-[14px] w-[52px] h-[52px] border border-grey5 rounded-md bg-gradient-to-b from-grey5 to-grey1 flex-none lg:p-4"
+            >
+              <img src="assets/img/twitter.svg" class="w-5 h-5" />
+            </div>
+            <div
+              class="p-[14px] w-[52px] h-[52px] border border-grey5 rounded-md bg-gradient-to-b from-grey5 to-grey1 flex-none lg:p-4"
+            >
+              <img src="assets/img/linkedin.svg" class="w-5 h-5" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="hidden w-full border-grey2 lg:block" />
+      <div class="flex flex-col gap-y-5 lg:flex-row justify-between">
+        <div class="flex-row lg:flex lg:gap-x-[22px]">
+          <div
+            class="flex flex-row py-5 gap-x-[10px] items-center justify-center border-b border-grey2 lg:pt-0 lg:pb-3 lg:gap-x-[6px]"
+          >
+            <img src="assets/img/message.svg" class="w-6 h-6 lg:w-5 lg:h-5" />
+            <p class="text-lg leading-normal text-grey3 lg:text-base">
+              hello@squareup.com
+            </p>
+          </div>
+          <div
+            class="flex flex-row py-5 gap-x-[10px] items-center justify-center border-b border-grey2 lg:pt-0 lg:pb-3 lg:gap-x-[6px]"
+          >
+            <img src="assets/img/phone.svg" class="w-6 h-6 lg:w-5 lg:h-5" />
+            <p class="text-lg leading-normal text-grey3 lg:text-base">
+              +91 91813 23 2309
+            </p>
+          </div>
+          <div
+            class="flex flex-row py-5 gap-x-[10px] items-center justify-center border-b border-grey2 lg:pt-0 lg:pb-3 lg:gap-x-[6px]"
+          >
+            <img src="assets/img/location.svg" class="w-6 h-6 lg:w-5 lg:h-5" />
+            <p class="text-lg leading-normal text-grey3 lg:text-base">
+              Somewhere in the World
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col justify-center items-center">
+          <p
+            class="text-center leading-normal text-grey4 lg:text-sm align-middle"
+          >
+            © 2023 SquareUp. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
